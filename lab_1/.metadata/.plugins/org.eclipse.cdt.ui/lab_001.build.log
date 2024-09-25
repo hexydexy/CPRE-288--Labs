@@ -1,0 +1,49 @@
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../lab1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lab1.d_raw"  "../lab1.c"
+"..\lcd.h", line 25: warning #2120-D: static function "lcd_waitUntilNotBusy" treated as extern because it was referenced but not defined
+Finished building: "../lab1.c"
+ 
+Building file: "../lcd.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lcd.d_raw"  "../lcd.c"
+"../lcd.c", line 148: warning #225-D: function "timer_waitMillis" declared implicitly
+"../lcd.c", line 151: warning #225-D: function "lcd_sendNibble" declared implicitly
+"../lcd.c", line 154: warning #225-D: function "timer_waitMicros" declared implicitly
+"../lcd.c", line 180: warning #225-D: function "lcd_sendNibble" declared implicitly
+"../lcd.c", line 211: warning #225-D: function "lcd_sendNibble" declared implicitly
+"../lcd.c", line 223: warning #161-D: declaration is incompatible with previous "lcd_sendNibble" (declared at line 151)
+"../lcd.c", line 231: warning #225-D: function "timer_waitMicros" declared implicitly
+"../lcd.c", line 302: warning #225-D: function "vsnprintf" declared implicitly
+"../lcd.c", line 305: warning #225-D: function "strcmp" declared implicitly
+"../lcd.c", line 309: warning #225-D: function "strcpy" declared implicitly
+"../lcd.c", line 360: warning #225-D: function "timer_waitMicros" declared implicitly
+"../lcd.c", line 370: warning #225-D: function "timer_waitMillis" declared implicitly
+"../lcd.c", line 95: warning #179-D: function "lcd_reverseNibble" was declared but never referenced
+Finished building: "../lcd.c"
+ 
+Building target: "lab_001.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab_001.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab_001_linkInfo.xml" --rom_model -o "lab_001.out" "./Timer.obj" "./lab1.obj" "./lcd.obj" "./resetSimulation.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+ 
+ undefined            first referenced
+  symbol                  in file     
+ ---------            ----------------
+ lcd_waitUntilNotBusy ./lab1.obj      
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "lab_001.out" not built
+ 
+>> Compilation failure
+makefile:140: recipe for target 'lab_001.out' failed
+gmake[1]: *** [lab_001.out] Error 1
+makefile:136: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****

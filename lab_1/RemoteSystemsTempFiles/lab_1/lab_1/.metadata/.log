@@ -1,0 +1,1344 @@
+!SESSION 2024-09-06 17:51:21.784 -----------------------------------------------
+eclipse.buildId=4.23.0.I20220308-0310
+java.version=11.0.13
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.common.core 1 0 2024-09-06 17:52:56.689
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 1 0 2024-09-06 17:52:56.689
+!MESSAGE debugServerDir=C:/ti/ccs1271/ccs/ccs_base/DebugServer
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2024-09-06 17:52:59.409
+!MESSAGE constructor
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2024-09-06 17:52:59.409
+!MESSAGE done with directories
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2024-09-06 17:52:59.409
+!MESSAGE loading ti_logger
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2024-09-06 17:52:59.424
+!MESSAGE Platform os: win32
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2024-09-06 17:52:59.424
+!MESSAGE loading cToolsIF
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2024-09-06 17:52:59.440
+!MESSAGE loading cTools
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2024-09-06 17:52:59.455
+!MESSAGE loading TraceFactory
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2024-09-06 17:52:59.487
+!MESSAGE loading sqlite3
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2024-09-06 17:52:59.502
+!MESSAGE loading CloudTrace
+
+!ENTRY com.ti.dbgtrc.webapp.CloudTraceInterface 0 0 2024-09-06 17:52:59.549
+!MESSAGE CloudTrace interface loaded
+
+!ENTRY org.eclipse.equinox.event 4 0 2024-09-06 17:53:02.546
+!MESSAGE Exception while dispatching event org.osgi.service.event.Event [topic=org/eclipse/e4/ui/model/application/ApplicationElement/tags/ADD] {ChangedElement=org.eclipse.e4.primaryDataStack=org.eclipse.e4.ui.model.application.ui.basic.impl.PartStackImpl@705dc1a6 (tags: [org.eclipse.e4.primaryDataStack, EditorStack, active, Maximized], contributorURI: null) (widget: CTabFolder {} [layout=org.eclipse.swt.custom.CTabFolderLayout@58179860], renderer: org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer@3c2e73ce, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null), org.eclipse.e4.data={ChangedElement=org.eclipse.e4.primaryDataStack=org.eclipse.e4.ui.model.application.ui.basic.impl.PartStackImpl@705dc1a6 (tags: [org.eclipse.e4.primaryDataStack, EditorStack, active, Maximized], contributorURI: null) (widget: CTabFolder {} [layout=org.eclipse.swt.custom.CTabFolderLayout@58179860], renderer: org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer@3c2e73ce, toBeRendered: true, onTop: false, visible: true, containerData: null, accessibilityPhrase: null), AttName=tags, EventType=ADD, Position=3, Widget=CTabFolder {} [layout=org.eclipse.swt.custom.CTabFolderLayout@58179860], NewValue=Maximized}, AttName=tags, EventType=ADD, Position=3, Widget=CTabFolder {} [layout=org.eclipse.swt.custom.CTabFolderLayout@58179860], NewValue=Maximized} to handler org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler@43e55cfb
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: java.lang.IllegalArgumentException: 
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:68)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4779)
+	at org.eclipse.e4.ui.workbench.swt.DisplayUISynchronize.syncExec(DisplayUISynchronize.java:34)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:64)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:133)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.addUnique(NotifyingListImpl.java:304)
+	at org.eclipse.emf.common.util.AbstractEList.add(AbstractEList.java:304)
+	at org.eclipse.ui.internal.WorkbenchIntroManager.setIntroStandby(WorkbenchIntroManager.java:200)
+	at org.eclipse.ui.internal.WorkbenchIntroManager.showIntro(WorkbenchIntroManager.java:139)
+	at org.eclipse.ui.application.WorkbenchWindowAdvisor.openIntro(WorkbenchWindowAdvisor.java:188)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchWindowAdvisor.openIntro(IDEWorkbenchWindowAdvisor.java:573)
+	at org.eclipse.ui.internal.WorkbenchWindow.setup(WorkbenchWindow.java:933)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:995)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:140)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:96)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.inject(ContextInjectionFactory.java:83)
+	at org.eclipse.ui.internal.Workbench.createWorkbenchWindow(Workbench.java:1469)
+	at org.eclipse.ui.internal.StandardTrim.createStatusLine(StandardTrim.java:118)
+	at org.eclipse.ui.internal.StandardTrim.createWidget(StandardTrim.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:995)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:140)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:403)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:344)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:227)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:94)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:37)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ToolControlRenderer.createWidget(ToolControlRenderer.java:129)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:995)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:659)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.TrimBarRenderer.processContents(TrimBarRenderer.java:109)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:544)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:528)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:680)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:673)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:763)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:712)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1083)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+Caused by: java.lang.IllegalArgumentException: 
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:66)
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:50)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.findElementsRecursive(ModelServiceImpl.java:175)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.findElements(ModelServiceImpl.java:437)
+	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.findElements(ModelServiceImpl.java:430)
+	at org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon.findValidElementsToMinimize(MinMaxAddon.java:855)
+	at org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon.getElementsToMinimize(MinMaxAddon.java:798)
+	at org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon.maximize(MinMaxAddon.java:734)
+	at org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon.subscribeTopicTagsChanged(MinMaxAddon.java:408)
+	at jdk.internal.reflect.GeneratedMethodAccessor17.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	... 89 more
+
+!ENTRY com.ti.ccstudio.project.ui.webcontent 1 0 2024-09-06 17:53:02.878
+!MESSAGE CCS HTTP adapter started! [ccs.port:53870] - Open 'http://localhost:53870/ide' in web browser to see listing of available APIs...
+
+!ENTRY com.ti.ccstudio.ui 1 0 2024-09-06 17:53:07.927
+!MESSAGE CCS IDE session started!
+	CCS build: 12.7.1.00001
+	CCS location: C:/ti/ccs1271/ccs
+	Workspace location: U:/CPRE 288/lab_1
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-09-06 17:53:08.536
+!MESSAGE Using unsafe http transport to retrieve http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/codegen/Updates/p2linux/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-09-06 17:53:08.802
+!MESSAGE Using unsafe http transport to retrieve http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/codegen/Updates/p2mac/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-09-06 17:53:09.177
+!MESSAGE Using unsafe http transport to retrieve http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/codegen/Updates/p2linux/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-09-06 17:53:09.958
+!MESSAGE Using unsafe http transport to retrieve http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/codegen/Updates/p2mac/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-09-06 17:53:10.396
+!MESSAGE Using unsafe http transport to retrieve http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/codegen/Updates/p2win32/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-09-06 17:53:11.545
+!MESSAGE Using unsafe http transport to retrieve http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/codegen/Updates/p2linux/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-09-06 17:53:11.779
+!MESSAGE Using unsafe http transport to retrieve http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/codegen/Updates/p2mac/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-09-06 17:53:11.967
+!MESSAGE Using unsafe http transport to retrieve http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/CCSv5/Updates/, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-09-06 17:53:12.295
+!MESSAGE Using unsafe http transport to retrieve http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/codegen/Updates/p2linux/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-09-06 17:53:12.827
+!MESSAGE Using unsafe http transport to retrieve http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/codegen/Updates/p2mac/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-09-06 17:53:13.077
+!MESSAGE Using unsafe http transport to retrieve http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/CCSv5/Updates/, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-09-06 17:53:13.419
+!MESSAGE Using unsafe http transport to retrieve http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/codegen/Updates/p2win32/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-09-06 17:53:14.513
+!MESSAGE Using unsafe http transport to retrieve http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/codegen/Updates/p2linux/artifacts.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-09-06 17:53:14.732
+!MESSAGE Using unsafe http transport to retrieve http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/codegen/Updates/p2linux/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-09-06 17:53:15.325
+!MESSAGE Using unsafe http transport to retrieve http://software-dl.ti.com/dsps/dsps_public_sw/sdo_ccstudio/codegen/Updates/p2win32/content.xml.xz, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2024-09-06 17:53:29.671
+!MESSAGE Using unsafe http transport to retrieve http://www.blackhawk-dsp.com/updates/win64/com.bh.ccstudio.emulation.win64_9.0.0.001, see CVE-2021-41033. Consider using https instead.
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:01:55.895
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\lockfile (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:01:55.895
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\lockfile (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\lockfile (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:01:57.364
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\Cache\Cache_Data\data_0 (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:01:57.364
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\Cache\Cache_Data\data_0 (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\Cache\Cache_Data\data_0 (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:01:57.380
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\Cache\Cache_Data\data_1 (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:01:57.380
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\Cache\Cache_Data\data_1 (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\Cache\Cache_Data\data_1 (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:01:57.380
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\Cache\Cache_Data\data_2 (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:01:57.380
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\Cache\Cache_Data\data_2 (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\Cache\Cache_Data\data_2 (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:01:57.395
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\Cache\Cache_Data\data_3 (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:01:57.395
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\Cache\Cache_Data\data_3 (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\Cache\Cache_Data\data_3 (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:01:57.552
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\Cache\Cache_Data\index (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:01:57.552
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\Cache\Cache_Data\index (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\Cache\Cache_Data\index (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:01:58.161
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\DawnCache\data_0 (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:01:58.161
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\DawnCache\data_0 (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\DawnCache\data_0 (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:01:58.177
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\DawnCache\data_1 (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:01:58.177
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\DawnCache\data_1 (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\DawnCache\data_1 (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:01:58.177
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\DawnCache\data_2 (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:01:58.177
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\DawnCache\data_2 (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\DawnCache\data_2 (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:01:58.192
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\DawnCache\data_3 (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:01:58.192
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\DawnCache\data_3 (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\DawnCache\data_3 (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:01:58.192
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\DawnCache\index (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:01:58.192
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\DawnCache\index (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\DawnCache\index (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:01:58.708
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\GPUCache\data_0 (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:01:58.708
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\GPUCache\data_0 (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\GPUCache\data_0 (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:01:58.708
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\GPUCache\data_1 (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:01:58.708
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\GPUCache\data_1 (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\GPUCache\data_1 (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:01:58.723
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\GPUCache\data_2 (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:01:58.723
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\GPUCache\data_2 (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\GPUCache\data_2 (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:01:58.723
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\GPUCache\data_3 (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:01:58.723
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\GPUCache\data_3 (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\GPUCache\data_3 (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:01:58.739
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\GPUCache\index (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:01:58.739
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\GPUCache\index (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\GPUCache\index (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:01:59.364
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\Sessions\Session_13370136784496951 (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:01:59.364
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\Sessions\Session_13370136784496951 (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\Sessions\Session_13370136784496951 (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:00.192
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\GrShaderCache\data_0 (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:00.192
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\GrShaderCache\data_0 (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\GrShaderCache\data_0 (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:00.192
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\GrShaderCache\data_1 (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:00.192
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\GrShaderCache\data_1 (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\GrShaderCache\data_1 (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:00.208
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\GrShaderCache\data_2 (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:00.208
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\GrShaderCache\data_2 (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\GrShaderCache\data_2 (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:00.208
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\GrShaderCache\data_3 (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:00.223
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\GrShaderCache\data_3 (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\GrShaderCache\data_3 (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:00.286
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\GrShaderCache\index (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:00.286
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\GrShaderCache\index (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\GrShaderCache\index (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:03.177
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\ShaderCache\data_0 (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:03.177
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\ShaderCache\data_0 (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\ShaderCache\data_0 (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:03.177
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\ShaderCache\data_1 (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:03.177
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\ShaderCache\data_1 (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\ShaderCache\data_1 (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:03.192
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\ShaderCache\data_2 (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:03.192
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\ShaderCache\data_2 (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\ShaderCache\data_2 (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:03.192
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\ShaderCache\data_3 (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:03.192
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\ShaderCache\data_3 (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\ShaderCache\data_3 (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:03.208
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\ShaderCache\index (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:03.208
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\ShaderCache\index (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\ShaderCache\index (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:41.021
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\lockfile (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:41.021
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\lockfile (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\lockfile (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:42.505
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\Cache\Cache_Data\data_0 (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:42.505
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\Cache\Cache_Data\data_0 (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\Cache\Cache_Data\data_0 (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:42.505
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\Cache\Cache_Data\data_1 (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:42.505
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\Cache\Cache_Data\data_1 (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\Cache\Cache_Data\data_1 (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:42.521
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\Cache\Cache_Data\data_2 (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:42.521
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\Cache\Cache_Data\data_2 (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\Cache\Cache_Data\data_2 (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:42.537
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\Cache\Cache_Data\data_3 (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:42.537
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\Cache\Cache_Data\data_3 (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\Cache\Cache_Data\data_3 (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:42.708
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\Cache\Cache_Data\index (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:42.708
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\Cache\Cache_Data\index (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\Cache\Cache_Data\index (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:43.333
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\DawnCache\data_0 (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:43.333
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\DawnCache\data_0 (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\DawnCache\data_0 (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:43.349
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\DawnCache\data_1 (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:43.349
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\DawnCache\data_1 (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\DawnCache\data_1 (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:43.349
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\DawnCache\data_2 (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:43.365
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\DawnCache\data_2 (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\DawnCache\data_2 (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:43.365
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\DawnCache\data_3 (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:43.365
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\DawnCache\data_3 (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\DawnCache\data_3 (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:43.380
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\DawnCache\index (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:43.380
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\DawnCache\index (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\DawnCache\index (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:43.896
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\GPUCache\data_0 (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:43.896
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\GPUCache\data_0 (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\GPUCache\data_0 (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:43.912
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\GPUCache\data_1 (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:43.912
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\GPUCache\data_1 (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\GPUCache\data_1 (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:43.912
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\GPUCache\data_2 (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:43.927
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\GPUCache\data_2 (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\GPUCache\data_2 (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:43.927
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\GPUCache\data_3 (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:43.927
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\GPUCache\data_3 (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\GPUCache\data_3 (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:43.943
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\GPUCache\index (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:43.943
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\GPUCache\index (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\GPUCache\index (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:44.615
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\Sessions\Session_13370136784496951 (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:44.615
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\Sessions\Session_13370136784496951 (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\Default\Sessions\Session_13370136784496951 (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:45.458
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\GrShaderCache\data_0 (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:45.458
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\GrShaderCache\data_0 (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\GrShaderCache\data_0 (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:45.474
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\GrShaderCache\data_1 (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:45.474
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\GrShaderCache\data_1 (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\GrShaderCache\data_1 (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:45.474
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\GrShaderCache\data_2 (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:45.490
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\GrShaderCache\data_2 (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\GrShaderCache\data_2 (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:45.490
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\GrShaderCache\data_3 (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:45.490
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\GrShaderCache\data_3 (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\GrShaderCache\data_3 (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:45.568
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\GrShaderCache\index (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:45.568
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\GrShaderCache\index (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\GrShaderCache\index (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:48.512
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\ShaderCache\data_0 (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:48.512
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\ShaderCache\data_0 (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\ShaderCache\data_0 (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:48.528
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\ShaderCache\data_1 (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:48.528
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\ShaderCache\data_1 (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\ShaderCache\data_1 (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:48.528
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\ShaderCache\data_2 (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:48.528
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\ShaderCache\data_2 (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\ShaderCache\data_2 (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:48.543
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\ShaderCache\data_3 (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:48.543
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\ShaderCache\data_3 (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\ShaderCache\data_3 (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:48.559
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\ShaderCache\index (The process cannot access the file because it is being used by another process)
+
+!ENTRY org.eclipse.ui.ide 4 4 2024-09-06 18:02:48.559
+!MESSAGE U:\CPRE 288\lab_1\.jxbrowser.userdata\ShaderCache\index (The process cannot access the file because it is being used by another process)
+!STACK 0
+java.io.FileNotFoundException: U:\CPRE 288\lab_1\.jxbrowser.userdata\ShaderCache\index (The process cannot access the file because it is being used by another process)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(Unknown Source)
+	at java.base/java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.ui.internal.ide.filesystem.FileSystemStructureProvider.getContents(FileSystemStructureProvider.java:79)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFile(ImportOperation.java:531)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importRecursivelyFrom(ImportOperation.java:775)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.importFileSystemObjects(ImportOperation.java:670)
+	at org.eclipse.ui.wizards.datatransfer.ImportOperation.execute(ImportOperation.java:392)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)

@@ -1,0 +1,42 @@
+#include "lcd.h"
+#include "Timer.h"
+#include <string.h>
+#include "tm4c123gh6pm.h"
+
+
+#define DELAY_TIME 300  // 300 milliseconds
+#define LCD_WIDTH 20    // Width of the LCD screen
+char message[] = "PLEASE END MY SUFFERING OH GOD ALL ALMIGHTY";
+
+void scrollBanner(void) {
+    int i;
+    int j;
+    int msgLen = strlen(message), totalLen = msgLen + LCD_WIDTH;
+    char display[LCD_WIDTH + 1];
+
+    while (1) {
+        // Step 1: Scroll message from the right
+        for (i = 0; i < totalLen; i++) {
+            for (j = 0; j < LCD_WIDTH; j++) {
+                int idx = i + j - LCD_WIDTH + 1;
+                display[j] = (idx >= 0 && idx < msgLen) ? message[idx] : ' ';
+            }
+            display[LCD_WIDTH] = '\0';   // Null-terminate the string
+            lcd_printf("%s", display);   // Display on the first line
+            timer_waitMillis(DELAY_TIME);  // Wait for 300ms
+
+            // Ensure the second line is always blank
+            lcd_gotoLine(2);
+            lcd_printf("");
+        }
+
+        // Step 2: Wait 300ms after the message is completely off the screen
+        timer_waitMillis(DELAY_TIME);
+    }
+}
+
+int main(void) {
+    timer_init();
+    lcd_init();
+    scrollBanner();
+}

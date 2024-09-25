@@ -1,0 +1,2271 @@
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../Timer.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="Timer.d_raw"  "../Timer.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'Timer.obj' failed
+"..\Timer.h", line 11: fatal error #1965: cannot open source file "inc/tm4c123gh6pm.h"
+1 catastrophic error detected in the compilation of "../Timer.c".
+Compilation terminated.
+gmake: *** [Timer.obj] Error 1
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'helloworld.obj' failed
+"..\Timer.h", line 11: fatal error #1965: cannot open source file "inc/tm4c123gh6pm.h"
+1 catastrophic error detected in the compilation of "../helloworld.c".
+Compilation terminated.
+gmake: *** [helloworld.obj] Error 1
+Building file: "../lcd.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lcd.d_raw"  "../lcd.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'lcd.obj' failed
+"..\lcd.h", line 17: fatal error #1965: cannot open source file "inc/tm4c123gh6pm.h"
+1 catastrophic error detected in the compilation of "../lcd.c".
+Compilation terminated.
+gmake: *** [lcd.obj] Error 1
+Building file: "../resetSimulation.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="resetSimulation.d_raw"  "../resetSimulation.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'resetSimulation.obj' failed
+"..\Timer.h", line 11: fatal error #1965: cannot open source file "inc/tm4c123gh6pm.h"
+1 catastrophic error detected in the compilation of "../resetSimulation.c".
+Compilation terminated.
+gmake: *** [resetSimulation.obj] Error 1
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building file: "../tm4c123gh6pm_startup_ccs.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="tm4c123gh6pm_startup_ccs.d_raw"  "../tm4c123gh6pm_startup_ccs.c"
+Finished building: "../tm4c123gh6pm_startup_ccs.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../Timer.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="Timer.d_raw"  "../Timer.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'Timer.obj' failed
+"..\Timer.h", line 11: fatal error #1965: cannot open source file "inc/tm4c123gh6pm.h"
+1 catastrophic error detected in the compilation of "../Timer.c".
+Compilation terminated.
+gmake: *** [Timer.obj] Error 1
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'helloworld.obj' failed
+"..\Timer.h", line 11: fatal error #1965: cannot open source file "inc/tm4c123gh6pm.h"
+1 catastrophic error detected in the compilation of "../helloworld.c".
+Compilation terminated.
+gmake: *** [helloworld.obj] Error 1
+Building file: "../lcd.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lcd.d_raw"  "../lcd.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'lcd.obj' failed
+"..\lcd.h", line 17: fatal error #1965: cannot open source file "inc/tm4c123gh6pm.h"
+1 catastrophic error detected in the compilation of "../lcd.c".
+Compilation terminated.
+gmake: *** [lcd.obj] Error 1
+Building file: "../resetSimulation.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="resetSimulation.d_raw"  "../resetSimulation.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'resetSimulation.obj' failed
+"..\Timer.h", line 11: fatal error #1965: cannot open source file "inc/tm4c123gh6pm.h"
+1 catastrophic error detected in the compilation of "../resetSimulation.c".
+Compilation terminated.
+gmake: *** [resetSimulation.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'helloworld.obj' failed
+"../helloworld.c", line 19: error #29: expected an expression
+1 error detected in the compilation of "../helloworld.c".
+gmake: *** [helloworld.obj] Error 1
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building file: "../Timer.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="Timer.d_raw"  "../Timer.c"
+Finished building: "../Timer.c"
+ 
+Building file: "../lcd.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lcd.d_raw"  "../lcd.c"
+Finished building: "../lcd.c"
+ 
+Building file: "../resetSimulation.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="resetSimulation.d_raw"  "../resetSimulation.c"
+Finished building: "../resetSimulation.c"
+ 
+Building file: "../tm4c123gh6pm_startup_ccs.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="tm4c123gh6pm_startup_ccs.d_raw"  "../tm4c123gh6pm_startup_ccs.c"
+Finished building: "../tm4c123gh6pm_startup_ccs.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'helloworld.obj' failed
+"../helloworld.c", line 19: error #29: expected an expression
+1 error detected in the compilation of "../helloworld.c".
+gmake: *** [helloworld.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'helloworld.obj' failed
+"../helloworld.c", line 30: error #17: expected a "]"
+1 error detected in the compilation of "../helloworld.c".
+gmake: *** [helloworld.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'helloworld.obj' failed
+"../helloworld.c", line 26: error #20: identifier "quoteLength" is undefined
+"../helloworld.c", line 27: warning #176-D: expression has no effect
+"../helloworld.c", line 28: error #66: expected a ";"
+"../helloworld.c", line 29: error #20: identifier "j" is undefined
+"../helloworld.c", line 31: error #20: identifier "nessageIndex" is undefined
+"../helloworld.c", line 31: error #20: identifier "messageLength" is undefined
+"../helloworld.c", line 32: error #20: identifier "display" is undefined
+"../helloworld.c", line 32: error #20: identifier "message" is undefined
+"../helloworld.c", line 36: error #20: identifier "display" is undefined
+"../helloworld.c", line 40: error #20: identifier "display" is undefined
+"../helloworld.c", line 18: warning #179-D: variable "width" was declared but never referenced
+9 errors detected in the compilation of "../helloworld.c".
+gmake: *** [helloworld.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'helloworld.obj' failed
+"../helloworld.c", line 26: error #20: identifier "quoteLength" is undefined
+"../helloworld.c", line 27: warning #176-D: expression has no effect
+"../helloworld.c", line 28: error #66: expected a ";"
+"../helloworld.c", line 29: error #20: identifier "j" is undefined
+"../helloworld.c", line 31: error #20: identifier "nessageIndex" is undefined
+"../helloworld.c", line 31: error #20: identifier "messageLength" is undefined
+"../helloworld.c", line 32: error #20: identifier "display" is undefined
+"../helloworld.c", line 32: error #20: identifier "message" is undefined
+"../helloworld.c", line 36: error #20: identifier "display" is undefined
+"../helloworld.c", line 40: error #20: identifier "display" is undefined
+"../helloworld.c", line 18: warning #179-D: variable "width" was declared but never referenced
+9 errors detected in the compilation of "../helloworld.c".
+gmake: *** [helloworld.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'helloworld.obj' failed
+"../helloworld.c", line 26: error #20: identifier "quoteLength" is undefined
+"../helloworld.c", line 27: warning #176-D: expression has no effect
+"../helloworld.c", line 28: error #66: expected a ";"
+"../helloworld.c", line 29: error #20: identifier "j" is undefined
+"../helloworld.c", line 31: error #20: identifier "nessageIndex" is undefined
+"../helloworld.c", line 31: error #20: identifier "messageLength" is undefined
+"../helloworld.c", line 32: error #20: identifier "display" is undefined
+"../helloworld.c", line 32: error #20: identifier "message" is undefined
+"../helloworld.c", line 36: error #20: identifier "display" is undefined
+"../helloworld.c", line 40: error #20: identifier "display" is undefined
+"../helloworld.c", line 18: warning #179-D: variable "width" was declared but never referenced
+9 errors detected in the compilation of "../helloworld.c".
+gmake: *** [helloworld.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'helloworld.obj' failed
+"../helloworld.c", line 21: error #20: identifier "i" is undefined
+"../helloworld.c", line 21: error #20: identifier "messageLength" is undefined
+"../helloworld.c", line 28: error #20: identifier "message" is undefined
+"../helloworld.c", line 33: error #66: expected a ";"
+"../helloworld.c", line 36: error #20: identifier "DELAY_TIME" is undefined
+"../helloworld.c", line 52: error #171: expected a declaration
+6 errors detected in the compilation of "../helloworld.c".
+gmake: *** [helloworld.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'helloworld.obj' failed
+"../helloworld.c", line 21: error #20: identifier "i" is undefined
+"../helloworld.c", line 28: error #20: identifier "message" is undefined
+"../helloworld.c", line 33: error #66: expected a ";"
+"../helloworld.c", line 36: error #20: identifier "DELAY_TIME" is undefined
+"../helloworld.c", line 52: error #171: expected a declaration
+5 errors detected in the compilation of "../helloworld.c".
+gmake: *** [helloworld.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'helloworld.obj' failed
+"../helloworld.c", line 29: error #20: identifier "message" is undefined
+"../helloworld.c", line 34: error #66: expected a ";"
+"../helloworld.c", line 37: error #20: identifier "DELAY_TIME" is undefined
+"../helloworld.c", line 53: error #171: expected a declaration
+4 errors detected in the compilation of "../helloworld.c".
+gmake: *** [helloworld.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'helloworld.obj' failed
+"../helloworld.c", line 34: error #66: expected a ";"
+"../helloworld.c", line 37: error #20: identifier "DELAY_TIME" is undefined
+"../helloworld.c", line 53: error #171: expected a declaration
+3 errors detected in the compilation of "../helloworld.c".
+gmake: *** [helloworld.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+Finished building: "../helloworld.c"
+ 
+Building target: "lab_001.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab_001.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab_001_linkInfo.xml" --rom_model -o "lab_001.out" "./Timer.obj" "./helloworld.obj" "./lcd.obj" "./main.obj" "./resetSimulation.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+error #10056: symbol "main" redefined: first defined in "./helloworld.obj"; redefined in "./main.obj"
+error #10010: errors encountered during linking; "lab_001.out" not built
+ 
+>> Compilation failure
+makefile:141: recipe for target 'lab_001.out' failed
+gmake[1]: *** [lab_001.out] Error 1
+makefile:137: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building target: "lab_001.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab_001.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab_001_linkInfo.xml" --rom_model -o "lab_001.out" "./Timer.obj" "./helloworld.obj" "./lcd.obj" "./main.obj" "./resetSimulation.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+error #10056: symbol "main" redefined: first defined in "./helloworld.obj"; redefined in "./main.obj"
+error #10010: errors encountered during linking; "lab_001.out" not built
+ 
+>> Compilation failure
+makefile:141: recipe for target 'lab_001.out' failed
+gmake[1]: *** [lab_001.out] Error 1
+gmake: *** [all] Error 2
+makefile:137: recipe for target 'all' failed
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+Finished building: "../helloworld.c"
+ 
+Building target: "lab_001.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab_001.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab_001_linkInfo.xml" --rom_model -o "lab_001.out" "./Timer.obj" "./helloworld.obj" "./lcd.obj" "./main.obj" "./resetSimulation.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+error #10056: symbol "main" redefined: first defined in "./helloworld.obj"; redefined in "./main.obj"
+error #10010: errors encountered during linking; "lab_001.out" not built
+ 
+>> Compilation failure
+makefile:141: recipe for target 'lab_001.out' failed
+gmake[1]: *** [lab_001.out] Error 1
+gmake: *** [all] Error 2
+makefile:137: recipe for target 'all' failed
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building target: "lab_001.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab_001.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab_001_linkInfo.xml" --rom_model -o "lab_001.out" "./Timer.obj" "./helloworld.obj" "./lcd.obj" "./main.obj" "./resetSimulation.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+error #10056: symbol "main" redefined: first defined in "./helloworld.obj"; redefined in "./main.obj"
+error #10010: errors encountered during linking; "lab_001.out" not built
+ 
+>> Compilation failure
+makefile:141: recipe for target 'lab_001.out' failed
+gmake[1]: *** [lab_001.out] Error 1
+gmake: *** [all] Error 2
+makefile:137: recipe for target 'all' failed
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building target: "lab_001.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab_001.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab_001_linkInfo.xml" --rom_model -o "lab_001.out" "./Timer.obj" "./helloworld.obj" "./lcd.obj" "./main.obj" "./resetSimulation.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+error #10056: symbol "main" redefined: first defined in "./helloworld.obj"; redefined in "./main.obj"
+error #10010: errors encountered during linking; "lab_001.out" not built
+ 
+>> Compilation failure
+makefile:141: recipe for target 'lab_001.out' failed
+gmake[1]: *** [lab_001.out] Error 1
+gmake: *** [all] Error 2
+makefile:137: recipe for target 'all' failed
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building target: "lab_001.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab_001.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab_001_linkInfo.xml" --rom_model -o "lab_001.out" "./Timer.obj" "./helloworld.obj" "./lcd.obj" "./resetSimulation.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "lab_001.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+Finished building: "../helloworld.c"
+ 
+Building target: "lab_001.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab_001.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab_001_linkInfo.xml" --rom_model -o "lab_001.out" "./Timer.obj" "./helloworld.obj" "./lcd.obj" "./resetSimulation.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "lab_001.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+Finished building: "../helloworld.c"
+ 
+Building target: "lab_001.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab_001.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab_001_linkInfo.xml" --rom_model -o "lab_001.out" "./Timer.obj" "./helloworld.obj" "./lcd.obj" "./resetSimulation.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "lab_001.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+Finished building: "../helloworld.c"
+ 
+Building target: "lab_001.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab_001.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab_001_linkInfo.xml" --rom_model -o "lab_001.out" "./Timer.obj" "./helloworld.obj" "./lcd.obj" "./resetSimulation.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "lab_001.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+Finished building: "../helloworld.c"
+ 
+Building target: "lab_001.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab_001.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab_001_linkInfo.xml" --rom_model -o "lab_001.out" "./Timer.obj" "./helloworld.obj" "./lcd.obj" "./resetSimulation.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "lab_001.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+Finished building: "../helloworld.c"
+ 
+Building target: "lab_001.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab_001.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab_001_linkInfo.xml" --rom_model -o "lab_001.out" "./Timer.obj" "./helloworld.obj" "./lcd.obj" "./resetSimulation.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "lab_001.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+Finished building: "../helloworld.c"
+ 
+Building target: "lab_001.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab_001.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab_001_linkInfo.xml" --rom_model -o "lab_001.out" "./Timer.obj" "./helloworld.obj" "./lcd.obj" "./resetSimulation.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "lab_001.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+Finished building: "../helloworld.c"
+ 
+Building target: "lab_001.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab_001.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab_001_linkInfo.xml" --rom_model -o "lab_001.out" "./Timer.obj" "./helloworld.obj" "./lcd.obj" "./resetSimulation.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "lab_001.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+Finished building: "../helloworld.c"
+ 
+Building target: "lab_001.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab_001.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab_001_linkInfo.xml" --rom_model -o "lab_001.out" "./Timer.obj" "./helloworld.obj" "./lcd.obj" "./resetSimulation.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "lab_001.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'lab_001.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'helloworld.obj' failed
+"../helloworld.c", line 34: error #29: expected an expression
+"../helloworld.c", line 34: error #20: identifier "j" is undefined
+"../helloworld.c", line 35: error #29: expected an expression
+"../helloworld.c", line 35: error #66: expected a ";"
+"../helloworld.c", line 37: error #20: identifier "messageIndex" is undefined
+"../helloworld.c", line 39: error #66: expected a ";"
+"../helloworld.c", line 50: error #171: expected a declaration
+At end of source: warning #12-D: parsing restarts here after previous syntax error
+7 errors detected in the compilation of "../helloworld.c".
+gmake: *** [helloworld.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'helloworld.obj' failed
+"../helloworld.c", line 34: error #29: expected an expression
+"../helloworld.c", line 34: error #20: identifier "j" is undefined
+"../helloworld.c", line 35: error #29: expected an expression
+"../helloworld.c", line 35: error #66: expected a ";"
+"../helloworld.c", line 37: error #20: identifier "messageIndex" is undefined
+"../helloworld.c", line 39: error #66: expected a ";"
+6 errors detected in the compilation of "../helloworld.c".
+gmake: *** [helloworld.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'helloworld.obj' failed
+"../helloworld.c", line 34: error #29: expected an expression
+"../helloworld.c", line 34: error #20: identifier "j" is undefined
+"../helloworld.c", line 35: error #29: expected an expression
+"../helloworld.c", line 35: error #66: expected a ";"
+"../helloworld.c", line 39: error #66: expected a ";"
+5 errors detected in the compilation of "../helloworld.c".
+gmake: *** [helloworld.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'helloworld.obj' failed
+"../helloworld.c", line 34: error #29: expected an expression
+"../helloworld.c", line 34: error #20: identifier "j" is undefined
+"../helloworld.c", line 35: error #29: expected an expression
+"../helloworld.c", line 35: error #66: expected a ";"
+4 errors detected in the compilation of "../helloworld.c".
+gmake: *** [helloworld.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'helloworld.obj' failed
+"../helloworld.c", line 35: error #29: expected an expression
+"../helloworld.c", line 36: error #29: expected an expression
+"../helloworld.c", line 36: error #66: expected a ";"
+3 errors detected in the compilation of "../helloworld.c".
+gmake: *** [helloworld.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'helloworld.obj' failed
+"../helloworld.c", line 36: error #66: expected a ";"
+1 error detected in the compilation of "../helloworld.c".
+gmake: *** [helloworld.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'helloworld.obj' failed
+"../helloworld.c", line 36: error #66: expected a ";"
+1 error detected in the compilation of "../helloworld.c".
+gmake: *** [helloworld.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'helloworld.obj' failed
+"../helloworld.c", line 36: error #66: expected a ";"
+1 error detected in the compilation of "../helloworld.c".
+gmake: *** [helloworld.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+Finished building: "../helloworld.c"
+ 
+Building target: "lab_001.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab_001.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab_001_linkInfo.xml" --rom_model -o "lab_001.out" "./Timer.obj" "./helloworld.obj" "./lcd.obj" "./resetSimulation.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "lab_001.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'lab_001.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'lab_001.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'lab_001.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'lab_001.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'lab_001.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+Finished building: "../helloworld.c"
+ 
+Building target: "lab_001.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab_001.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab_001_linkInfo.xml" --rom_model -o "lab_001.out" "./Timer.obj" "./helloworld.obj" "./lcd.obj" "./resetSimulation.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "lab_001.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'lab_001.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'helloworld.obj' failed
+"../helloworld.c", line 33: error #20: identifier "i" is undefined
+"../helloworld.c", line 34: error #20: identifier "j" is undefined
+2 errors detected in the compilation of "../helloworld.c".
+gmake: *** [helloworld.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'helloworld.obj' failed
+"../helloworld.c", line 33: error #20: identifier "i" is undefined
+"../helloworld.c", line 34: error #20: identifier "j" is undefined
+2 errors detected in the compilation of "../helloworld.c".
+gmake: *** [helloworld.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'helloworld.obj' failed
+"../helloworld.c", line 33: error #29: expected an expression
+"../helloworld.c", line 33: error #20: identifier "i" is undefined
+"../helloworld.c", line 34: error #29: expected an expression
+"../helloworld.c", line 34: error #20: identifier "j" is undefined
+4 errors detected in the compilation of "../helloworld.c".
+gmake: *** [helloworld.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'helloworld.obj' failed
+"../helloworld.c", line 33: error #29: expected an expression
+"../helloworld.c", line 33: error #20: identifier "i" is undefined
+"../helloworld.c", line 34: error #29: expected an expression
+"../helloworld.c", line 34: error #20: identifier "j" is undefined
+4 errors detected in the compilation of "../helloworld.c".
+gmake: *** [helloworld.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'helloworld.obj' failed
+"../helloworld.c", line 34: error #29: expected an expression
+"../helloworld.c", line 36: error #29: expected an expression
+"../helloworld.c", line 36: warning #551-D: variable "j" is used before its value is set
+2 errors detected in the compilation of "../helloworld.c".
+gmake: *** [helloworld.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+Finished building: "../helloworld.c"
+ 
+Building target: "lab_001.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab_001.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab_001_linkInfo.xml" --rom_model -o "lab_001.out" "./Timer.obj" "./helloworld.obj" "./lcd.obj" "./resetSimulation.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "lab_001.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'lab_001.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+Finished building: "../helloworld.c"
+ 
+Building target: "lab_001.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab_001.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab_001_linkInfo.xml" --rom_model -o "lab_001.out" "./Timer.obj" "./helloworld.obj" "./lcd.obj" "./resetSimulation.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "lab_001.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+Finished building: "../helloworld.c"
+ 
+Building target: "lab_001.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab_001.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab_001_linkInfo.xml" --rom_model -o "lab_001.out" "./Timer.obj" "./helloworld.obj" "./lcd.obj" "./resetSimulation.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "lab_001.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+Finished building: "../helloworld.c"
+ 
+Building target: "lab_001.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab_001.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab_001_linkInfo.xml" --rom_model -o "lab_001.out" "./Timer.obj" "./helloworld.obj" "./lcd.obj" "./resetSimulation.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "lab_001.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+Finished building: "../helloworld.c"
+ 
+Building target: "lab_001.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab_001.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab_001_linkInfo.xml" --rom_model -o "lab_001.out" "./Timer.obj" "./helloworld.obj" "./lcd.obj" "./resetSimulation.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "lab_001.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+Finished building: "../helloworld.c"
+ 
+Building target: "lab_001.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab_001.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab_001_linkInfo.xml" --rom_model -o "lab_001.out" "./Timer.obj" "./helloworld.obj" "./lcd.obj" "./resetSimulation.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "lab_001.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'lab_001.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'lab_001.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'helloworld.obj' failed
+"../helloworld.c", line 52: error #66: expected a ";"
+At end of source: warning #12-D: parsing restarts here after previous syntax error
+At end of source: error #68: expected a "}"
+2 errors detected in the compilation of "../helloworld.c".
+gmake: *** [helloworld.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'helloworld.obj' failed
+"../helloworld.c", line 52: error #66: expected a ";"
+At end of source: warning #12-D: parsing restarts here after previous syntax error
+At end of source: error #68: expected a "}"
+2 errors detected in the compilation of "../helloworld.c".
+gmake: *** [helloworld.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'helloworld.obj' failed
+"../helloworld.c", line 53: error #20: identifier "message" is undefined
+"../helloworld.c", line 58: error #29: expected an expression
+"../helloworld.c", line 58: error #20: identifier "i" is undefined
+"../helloworld.c", line 59: error #29: expected an expression
+"../helloworld.c", line 59: error #20: identifier "j" is undefined
+"../helloworld.c", line 86: warning #225-D: function "bannerText" declared implicitly
+5 errors detected in the compilation of "../helloworld.c".
+gmake: *** [helloworld.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'helloworld.obj' failed
+"../helloworld.c", line 58: error #29: expected an expression
+"../helloworld.c", line 58: error #20: identifier "i" is undefined
+"../helloworld.c", line 59: error #29: expected an expression
+"../helloworld.c", line 59: error #20: identifier "j" is undefined
+"../helloworld.c", line 61: error #20: identifier "message" is undefined
+"../helloworld.c", line 86: warning #225-D: function "bannerText" declared implicitly
+5 errors detected in the compilation of "../helloworld.c".
+gmake: *** [helloworld.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'helloworld.obj' failed
+"../helloworld.c", line 2: warning #225-D: function "strlen" declared implicitly
+"../helloworld.c", line 2: error #20: identifier "message" is undefined
+"../helloworld.c", line 2: error #20: identifier "LCD_WIDTH" is undefined
+"../helloworld.c", line 7: error #29: expected an expression
+"../helloworld.c", line 7: error #20: identifier "i" is undefined
+"../helloworld.c", line 8: error #29: expected an expression
+"../helloworld.c", line 8: error #20: identifier "j" is undefined
+"../helloworld.c", line 13: warning #225-D: function "lcd_printf" declared implicitly
+"../helloworld.c", line 14: warning #225-D: function "timer_waitMillis" declared implicitly
+"../helloworld.c", line 14: error #20: identifier "DELAY_TIME" is undefined
+"../helloworld.c", line 17: warning #225-D: function "lcd_gotoLine" declared implicitly
+"../helloworld.c", line 22: warning #225-D: function "timer_waitMillis" declared implicitly
+"../helloworld.c", line 22: error #20: identifier "DELAY_TIME" is undefined
+"../helloworld.c", line 27: warning #225-D: function "timer_init" declared implicitly
+"../helloworld.c", line 28: warning #225-D: function "lcd_init" declared implicitly
+8 errors detected in the compilation of "../helloworld.c".
+gmake: *** [helloworld.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'helloworld.obj' failed
+"../helloworld.c", line 15: error #29: expected an expression
+"../helloworld.c", line 15: error #20: identifier "i" is undefined
+"../helloworld.c", line 16: error #29: expected an expression
+"../helloworld.c", line 16: error #20: identifier "j" is undefined
+4 errors detected in the compilation of "../helloworld.c".
+gmake: *** [helloworld.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../helloworld.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="helloworld.d_raw"  "../helloworld.c"
+Finished building: "../helloworld.c"
+ 
+Building target: "lab_001.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab_001.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab_001_linkInfo.xml" --rom_model -o "lab_001.out" "./Timer.obj" "./helloworld.obj" "./lcd.obj" "./resetSimulation.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "lab_001.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'lab_001.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../lab1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lab1.d_raw"  "../lab1.c"
+Finished building: "../lab1.c"
+ 
+Building target: "lab_001.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab_001.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab_001_linkInfo.xml" --rom_model -o "lab_001.out" "./Timer.obj" "./lab1.obj" "./lcd.obj" "./resetSimulation.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "lab_001.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../lab1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lab1.d_raw"  "../lab1.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'lab1.obj' failed
+"../lab1.c", line 1: fatal error #1965: cannot open source file "lcd(1).h"
+1 catastrophic error detected in the compilation of "../lab1.c".
+Compilation terminated.
+gmake: *** [lab1.obj] Error 1
+Building file: "../Downloads/lcd (1).c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="Downloads/lcd (1).d_raw" --obj_directory="Downloads"  "../Downloads/lcd (1).c"
+ 
+>> Compilation failure
+Downloads/subdir_rules.mk:9: recipe for target 'Downloads/lcd (1).obj' failed
+"../Downloads/lcd (1).c", line 95: warning #174-D: external/internal linkage conflict with previous declaration
+"../Downloads/lcd (1).c", line 192: error #148: declaration is incompatible with "void lcd_puts(char *)" (declared at line 30 of "U:/CPRE 288/lab_1/lab_001/lcd.h")
+"../Downloads/lcd (1).c", line 223: warning #174-D: external/internal linkage conflict with previous declaration
+"../Downloads/lcd (1).c", line 95: warning #179-D: function "lcd_reverseNibble" was declared but never referenced
+1 error detected in the compilation of "../Downloads/lcd (1).c".
+gmake: *** [Downloads/lcd (1).obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../lab1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lab1.d_raw"  "../lab1.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'lab1.obj' failed
+"../lab1.c", line 1: fatal error #1965: cannot open source file "lcd.h"
+1 catastrophic error detected in the compilation of "../lab1.c".
+Compilation terminated.
+gmake: *** [lab1.obj] Error 1
+Building file: "../Downloads/lcd.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="Downloads/lcd.d_raw" --obj_directory="Downloads"  "../Downloads/lcd.c"
+ 
+>> Compilation failure
+Downloads/subdir_rules.mk:9: recipe for target 'Downloads/lcd.obj' failed
+"..\Downloads\lcd.h", line 89: warning #1-D: last line of file ends without a newline
+"../Downloads/lcd.c", line 105: error #20: identifier "GPIO_PORTD_DATA_R" is undefined
+"../Downloads/lcd.c", line 110: error #20: identifier "GPIO_PORTF_DATA_R" is undefined
+"../Downloads/lcd.c", line 136: error #20: identifier "SYSCTL_RCGCGPIO_R" is undefined
+"../Downloads/lcd.c", line 139: error #20: identifier "GPIO_PORTF_DIR_R" is undefined
+"../Downloads/lcd.c", line 140: error #20: identifier "GPIO_PORTF_DEN_R" is undefined
+"../Downloads/lcd.c", line 142: error #20: identifier "GPIO_PORTD_DIR_R" is undefined
+"../Downloads/lcd.c", line 143: error #20: identifier "GPIO_PORTD_DEN_R" is undefined
+"../Downloads/lcd.c", line 145: error #20: identifier "GPIO_PORTD_DATA_R" is undefined
+"../Downloads/lcd.c", line 148: warning #225-D: function "timer_waitMillis" declared implicitly
+"../Downloads/lcd.c", line 151: warning #225-D: function "lcd_sendNibble" declared implicitly
+"../Downloads/lcd.c", line 154: warning #225-D: function "timer_waitMicros" declared implicitly
+"../Downloads/lcd.c", line 176: error #20: identifier "GPIO_PORTD_DATA_R" is undefined
+"../Downloads/lcd.c", line 180: warning #225-D: function "lcd_sendNibble" declared implicitly
+"../Downloads/lcd.c", line 207: error #20: identifier "GPIO_PORTD_DATA_R" is undefined
+"../Downloads/lcd.c", line 211: warning #225-D: function "lcd_sendNibble" declared implicitly
+"../Downloads/lcd.c", line 223: warning #161-D: declaration is incompatible with previous "lcd_sendNibble" (declared at line 151)
+"../Downloads/lcd.c", line 227: error #20: identifier "GPIO_PORTD_DATA_R" is undefined
+"../Downloads/lcd.c", line 228: error #20: identifier "GPIO_PORTF_DATA_R" is undefined
+"../Downloads/lcd.c", line 231: warning #225-D: function "timer_waitMicros" declared implicitly
+"../Downloads/lcd.c", line 302: warning #225-D: function "vsnprintf" declared implicitly
+"../Downloads/lcd.c", line 305: warning #225-D: function "strcmp" declared implicitly
+"../Downloads/lcd.c", line 309: warning #225-D: function "strcpy" declared implicitly
+"../Downloads/lcd.c", line 355: error #20: identifier "GPIO_PORTD_DATA_R" is undefined
+"../Downloads/lcd.c", line 360: warning #225-D: function "timer_waitMicros" declared implicitly
+"../Downloads/lcd.c", line 370: warning #225-D: function "timer_waitMillis" declared implicitly
+"../Downloads/lcd.c", line 95: warning #179-D: function "lcd_reverseNibble" was declared but never referenced
+13 errors detected in the compilation of "../Downloads/lcd.c".
+gmake: *** [Downloads/lcd.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../lab1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lab1.d_raw"  "../lab1.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'lab1.obj' failed
+"../lab1.c", line 1: fatal error #1965: cannot open source file "lcd.h"
+1 catastrophic error detected in the compilation of "../lab1.c".
+Compilation terminated.
+gmake: *** [lab1.obj] Error 1
+Building file: "../Downloads/lcd.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="Downloads/lcd.d_raw" --obj_directory="Downloads"  "../Downloads/lcd.c"
+ 
+>> Compilation failure
+Downloads/subdir_rules.mk:9: recipe for target 'Downloads/lcd.obj' failed
+"..\Downloads\lcd.h", line 89: warning #1-D: last line of file ends without a newline
+"../Downloads/lcd.c", line 105: error #20: identifier "GPIO_PORTD_DATA_R" is undefined
+"../Downloads/lcd.c", line 110: error #20: identifier "GPIO_PORTF_DATA_R" is undefined
+"../Downloads/lcd.c", line 136: error #20: identifier "SYSCTL_RCGCGPIO_R" is undefined
+"../Downloads/lcd.c", line 139: error #20: identifier "GPIO_PORTF_DIR_R" is undefined
+"../Downloads/lcd.c", line 140: error #20: identifier "GPIO_PORTF_DEN_R" is undefined
+"../Downloads/lcd.c", line 142: error #20: identifier "GPIO_PORTD_DIR_R" is undefined
+"../Downloads/lcd.c", line 143: error #20: identifier "GPIO_PORTD_DEN_R" is undefined
+"../Downloads/lcd.c", line 145: error #20: identifier "GPIO_PORTD_DATA_R" is undefined
+"../Downloads/lcd.c", line 148: warning #225-D: function "timer_waitMillis" declared implicitly
+"../Downloads/lcd.c", line 151: warning #225-D: function "lcd_sendNibble" declared implicitly
+"../Downloads/lcd.c", line 154: warning #225-D: function "timer_waitMicros" declared implicitly
+"../Downloads/lcd.c", line 176: error #20: identifier "GPIO_PORTD_DATA_R" is undefined
+"../Downloads/lcd.c", line 180: warning #225-D: function "lcd_sendNibble" declared implicitly
+"../Downloads/lcd.c", line 207: error #20: identifier "GPIO_PORTD_DATA_R" is undefined
+"../Downloads/lcd.c", line 211: warning #225-D: function "lcd_sendNibble" declared implicitly
+"../Downloads/lcd.c", line 223: warning #161-D: declaration is incompatible with previous "lcd_sendNibble" (declared at line 151)
+"../Downloads/lcd.c", line 227: error #20: identifier "GPIO_PORTD_DATA_R" is undefined
+"../Downloads/lcd.c", line 228: error #20: identifier "GPIO_PORTF_DATA_R" is undefined
+"../Downloads/lcd.c", line 231: warning #225-D: function "timer_waitMicros" declared implicitly
+"../Downloads/lcd.c", line 302: warning #225-D: function "vsnprintf" declared implicitly
+"../Downloads/lcd.c", line 305: warning #225-D: function "strcmp" declared implicitly
+"../Downloads/lcd.c", line 309: warning #225-D: function "strcpy" declared implicitly
+"../Downloads/lcd.c", line 355: error #20: identifier "GPIO_PORTD_DATA_R" is undefined
+"../Downloads/lcd.c", line 360: warning #225-D: function "timer_waitMicros" declared implicitly
+"../Downloads/lcd.c", line 370: warning #225-D: function "timer_waitMillis" declared implicitly
+"../Downloads/lcd.c", line 95: warning #179-D: function "lcd_reverseNibble" was declared but never referenced
+13 errors detected in the compilation of "../Downloads/lcd.c".
+gmake: *** [Downloads/lcd.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 clean -O 
+ 
+DEL /F  "lab_001.out" 
+DEL /F "Timer.obj" "lab1.obj" "resetSimulation.obj" "tm4c123gh6pm_startup_ccs.obj" "Downloads\lcd.obj" 
+DEL /F "Timer.d" "lab1.d" "resetSimulation.d" "tm4c123gh6pm_startup_ccs.d" "Downloads\lcd.d" 
+Could Not Find U:\CPRE 288\lab_1\lab_001\Debug\lab_001.out
+Could Not Find U:\CPRE 288\lab_1\lab_001\Debug\Downloads\lcd.obj
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 clean -O 
+ 
+DEL /F  "lab_001.out" 
+DEL /F "Timer.obj" "lab1.obj" "resetSimulation.obj" "tm4c123gh6pm_startup_ccs.obj" "Downloads\lcd.obj" 
+DEL /F "Timer.d" "lab1.d" "resetSimulation.d" "tm4c123gh6pm_startup_ccs.d" "Downloads\lcd.d" 
+Could Not Find U:\CPRE 288\lab_1\lab_001\Debug\lab_001.out
+Could Not Find U:\CPRE 288\lab_1\lab_001\Debug\Timer.obj
+Could Not Find U:\CPRE 288\lab_1\lab_001\Debug\Downloads\lcd.obj
+Could Not Find U:\CPRE 288\lab_1\lab_001\Debug\Timer.d
+Could Not Find U:\CPRE 288\lab_1\lab_001\Debug\Downloads\lcd.d
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../lab1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lab1.d_raw"  "../lab1.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'lab1.obj' failed
+"../lab1.c", line 1: fatal error #1965: cannot open source file "lcd.h"
+1 catastrophic error detected in the compilation of "../lab1.c".
+Compilation terminated.
+gmake: *** [lab1.obj] Error 1
+Building file: "../Downloads/lcd.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="Downloads/lcd.d_raw" --obj_directory="Downloads"  "../Downloads/lcd.c"
+ 
+>> Compilation failure
+Downloads/subdir_rules.mk:9: recipe for target 'Downloads/lcd.obj' failed
+"..\Downloads\lcd.h", line 89: warning #1-D: last line of file ends without a newline
+"../Downloads/lcd.c", line 105: error #20: identifier "GPIO_PORTD_DATA_R" is undefined
+"../Downloads/lcd.c", line 110: error #20: identifier "GPIO_PORTF_DATA_R" is undefined
+"../Downloads/lcd.c", line 136: error #20: identifier "SYSCTL_RCGCGPIO_R" is undefined
+"../Downloads/lcd.c", line 139: error #20: identifier "GPIO_PORTF_DIR_R" is undefined
+"../Downloads/lcd.c", line 140: error #20: identifier "GPIO_PORTF_DEN_R" is undefined
+"../Downloads/lcd.c", line 142: error #20: identifier "GPIO_PORTD_DIR_R" is undefined
+"../Downloads/lcd.c", line 143: error #20: identifier "GPIO_PORTD_DEN_R" is undefined
+"../Downloads/lcd.c", line 145: error #20: identifier "GPIO_PORTD_DATA_R" is undefined
+"../Downloads/lcd.c", line 148: warning #225-D: function "timer_waitMillis" declared implicitly
+"../Downloads/lcd.c", line 151: warning #225-D: function "lcd_sendNibble" declared implicitly
+"../Downloads/lcd.c", line 154: warning #225-D: function "timer_waitMicros" declared implicitly
+"../Downloads/lcd.c", line 176: error #20: identifier "GPIO_PORTD_DATA_R" is undefined
+"../Downloads/lcd.c", line 180: warning #225-D: function "lcd_sendNibble" declared implicitly
+"../Downloads/lcd.c", line 207: error #20: identifier "GPIO_PORTD_DATA_R" is undefined
+"../Downloads/lcd.c", line 211: warning #225-D: function "lcd_sendNibble" declared implicitly
+"../Downloads/lcd.c", line 223: warning #161-D: declaration is incompatible with previous "lcd_sendNibble" (declared at line 151)
+"../Downloads/lcd.c", line 227: error #20: identifier "GPIO_PORTD_DATA_R" is undefined
+"../Downloads/lcd.c", line 228: error #20: identifier "GPIO_PORTF_DATA_R" is undefined
+"../Downloads/lcd.c", line 231: warning #225-D: function "timer_waitMicros" declared implicitly
+"../Downloads/lcd.c", line 302: warning #225-D: function "vsnprintf" declared implicitly
+"../Downloads/lcd.c", line 305: warning #225-D: function "strcmp" declared implicitly
+"../Downloads/lcd.c", line 309: warning #225-D: function "strcpy" declared implicitly
+"../Downloads/lcd.c", line 355: error #20: identifier "GPIO_PORTD_DATA_R" is undefined
+"../Downloads/lcd.c", line 360: warning #225-D: function "timer_waitMicros" declared implicitly
+"../Downloads/lcd.c", line 370: warning #225-D: function "timer_waitMillis" declared implicitly
+"../Downloads/lcd.c", line 95: warning #179-D: function "lcd_reverseNibble" was declared but never referenced
+13 errors detected in the compilation of "../Downloads/lcd.c".
+gmake: *** [Downloads/lcd.obj] Error 1
+Building file: "../resetSimulation.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="resetSimulation.d_raw"  "../resetSimulation.c"
+Finished building: "../resetSimulation.c"
+ 
+Building file: "../Timer.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="Timer.d_raw"  "../Timer.c"
+Finished building: "../Timer.c"
+ 
+Building file: "../tm4c123gh6pm_startup_ccs.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="tm4c123gh6pm_startup_ccs.d_raw"  "../tm4c123gh6pm_startup_ccs.c"
+Finished building: "../tm4c123gh6pm_startup_ccs.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../lab1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lab1.d_raw"  "../lab1.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'lab1.obj' failed
+"../lab1.c", line 1: fatal error #1965: cannot open source file "lcd.h"
+1 catastrophic error detected in the compilation of "../lab1.c".
+Compilation terminated.
+gmake: *** [lab1.obj] Error 1
+Building file: "../Downloads/lcd.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="Downloads/lcd.d_raw" --obj_directory="Downloads"  "../Downloads/lcd.c"
+ 
+>> Compilation failure
+Downloads/subdir_rules.mk:9: recipe for target 'Downloads/lcd.obj' failed
+"..\Downloads\lcd.h", line 89: warning #1-D: last line of file ends without a newline
+"../Downloads/lcd.c", line 105: error #20: identifier "GPIO_PORTD_DATA_R" is undefined
+"../Downloads/lcd.c", line 110: error #20: identifier "GPIO_PORTF_DATA_R" is undefined
+"../Downloads/lcd.c", line 136: error #20: identifier "SYSCTL_RCGCGPIO_R" is undefined
+"../Downloads/lcd.c", line 139: error #20: identifier "GPIO_PORTF_DIR_R" is undefined
+"../Downloads/lcd.c", line 140: error #20: identifier "GPIO_PORTF_DEN_R" is undefined
+"../Downloads/lcd.c", line 142: error #20: identifier "GPIO_PORTD_DIR_R" is undefined
+"../Downloads/lcd.c", line 143: error #20: identifier "GPIO_PORTD_DEN_R" is undefined
+"../Downloads/lcd.c", line 145: error #20: identifier "GPIO_PORTD_DATA_R" is undefined
+"../Downloads/lcd.c", line 148: warning #225-D: function "timer_waitMillis" declared implicitly
+"../Downloads/lcd.c", line 151: warning #225-D: function "lcd_sendNibble" declared implicitly
+"../Downloads/lcd.c", line 154: warning #225-D: function "timer_waitMicros" declared implicitly
+"../Downloads/lcd.c", line 176: error #20: identifier "GPIO_PORTD_DATA_R" is undefined
+"../Downloads/lcd.c", line 180: warning #225-D: function "lcd_sendNibble" declared implicitly
+"../Downloads/lcd.c", line 207: error #20: identifier "GPIO_PORTD_DATA_R" is undefined
+"../Downloads/lcd.c", line 211: warning #225-D: function "lcd_sendNibble" declared implicitly
+"../Downloads/lcd.c", line 223: warning #161-D: declaration is incompatible with previous "lcd_sendNibble" (declared at line 151)
+"../Downloads/lcd.c", line 227: error #20: identifier "GPIO_PORTD_DATA_R" is undefined
+"../Downloads/lcd.c", line 228: error #20: identifier "GPIO_PORTF_DATA_R" is undefined
+"../Downloads/lcd.c", line 231: warning #225-D: function "timer_waitMicros" declared implicitly
+"../Downloads/lcd.c", line 302: warning #225-D: function "vsnprintf" declared implicitly
+"../Downloads/lcd.c", line 305: warning #225-D: function "strcmp" declared implicitly
+"../Downloads/lcd.c", line 309: warning #225-D: function "strcpy" declared implicitly
+"../Downloads/lcd.c", line 355: error #20: identifier "GPIO_PORTD_DATA_R" is undefined
+"../Downloads/lcd.c", line 360: warning #225-D: function "timer_waitMicros" declared implicitly
+"../Downloads/lcd.c", line 370: warning #225-D: function "timer_waitMillis" declared implicitly
+"../Downloads/lcd.c", line 95: warning #179-D: function "lcd_reverseNibble" was declared but never referenced
+13 errors detected in the compilation of "../Downloads/lcd.c".
+gmake: *** [Downloads/lcd.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../lab1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lab1.d_raw"  "../lab1.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'lab1.obj' failed
+"../lab1.c", line 1: fatal error #1965: cannot open source file "lcd.h"
+1 catastrophic error detected in the compilation of "../lab1.c".
+Compilation terminated.
+gmake: *** [lab1.obj] Error 1
+Building file: "../Downloads/lcd.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="Downloads/lcd.d_raw" --obj_directory="Downloads"  "../Downloads/lcd.c"
+ 
+>> Compilation failure
+Downloads/subdir_rules.mk:9: recipe for target 'Downloads/lcd.obj' failed
+"..\Downloads\lcd.h", line 89: warning #1-D: last line of file ends without a newline
+"../Downloads/lcd.c", line 105: error #20: identifier "GPIO_PORTD_DATA_R" is undefined
+"../Downloads/lcd.c", line 110: error #20: identifier "GPIO_PORTF_DATA_R" is undefined
+"../Downloads/lcd.c", line 136: error #20: identifier "SYSCTL_RCGCGPIO_R" is undefined
+"../Downloads/lcd.c", line 139: error #20: identifier "GPIO_PORTF_DIR_R" is undefined
+"../Downloads/lcd.c", line 140: error #20: identifier "GPIO_PORTF_DEN_R" is undefined
+"../Downloads/lcd.c", line 142: error #20: identifier "GPIO_PORTD_DIR_R" is undefined
+"../Downloads/lcd.c", line 143: error #20: identifier "GPIO_PORTD_DEN_R" is undefined
+"../Downloads/lcd.c", line 145: error #20: identifier "GPIO_PORTD_DATA_R" is undefined
+"../Downloads/lcd.c", line 148: warning #225-D: function "timer_waitMillis" declared implicitly
+"../Downloads/lcd.c", line 151: warning #225-D: function "lcd_sendNibble" declared implicitly
+"../Downloads/lcd.c", line 154: warning #225-D: function "timer_waitMicros" declared implicitly
+"../Downloads/lcd.c", line 176: error #20: identifier "GPIO_PORTD_DATA_R" is undefined
+"../Downloads/lcd.c", line 180: warning #225-D: function "lcd_sendNibble" declared implicitly
+"../Downloads/lcd.c", line 207: error #20: identifier "GPIO_PORTD_DATA_R" is undefined
+"../Downloads/lcd.c", line 211: warning #225-D: function "lcd_sendNibble" declared implicitly
+"../Downloads/lcd.c", line 223: warning #161-D: declaration is incompatible with previous "lcd_sendNibble" (declared at line 151)
+"../Downloads/lcd.c", line 227: error #20: identifier "GPIO_PORTD_DATA_R" is undefined
+"../Downloads/lcd.c", line 228: error #20: identifier "GPIO_PORTF_DATA_R" is undefined
+"../Downloads/lcd.c", line 231: warning #225-D: function "timer_waitMicros" declared implicitly
+"../Downloads/lcd.c", line 302: warning #225-D: function "vsnprintf" declared implicitly
+"../Downloads/lcd.c", line 305: warning #225-D: function "strcmp" declared implicitly
+"../Downloads/lcd.c", line 309: warning #225-D: function "strcpy" declared implicitly
+"../Downloads/lcd.c", line 355: error #20: identifier "GPIO_PORTD_DATA_R" is undefined
+"../Downloads/lcd.c", line 360: warning #225-D: function "timer_waitMicros" declared implicitly
+"../Downloads/lcd.c", line 370: warning #225-D: function "timer_waitMillis" declared implicitly
+"../Downloads/lcd.c", line 95: warning #179-D: function "lcd_reverseNibble" was declared but never referenced
+13 errors detected in the compilation of "../Downloads/lcd.c".
+gmake: *** [Downloads/lcd.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../lab1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lab1.d_raw"  "../lab1.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'lab1.obj' failed
+"../lab1.c", line 1: fatal error #1965: cannot open source file "lcd.h"
+1 catastrophic error detected in the compilation of "../lab1.c".
+Compilation terminated.
+gmake: *** [lab1.obj] Error 1
+Building file: "../Downloads/lcd.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="Downloads/lcd.d_raw" --obj_directory="Downloads"  "../Downloads/lcd.c"
+ 
+>> Compilation failure
+Downloads/subdir_rules.mk:9: recipe for target 'Downloads/lcd.obj' failed
+"../Downloads/lcd.c", line 105: error #20: identifier "GPIO_PORTD_DATA_R" is undefined
+"../Downloads/lcd.c", line 110: error #20: identifier "GPIO_PORTF_DATA_R" is undefined
+"../Downloads/lcd.c", line 136: error #20: identifier "SYSCTL_RCGCGPIO_R" is undefined
+"../Downloads/lcd.c", line 139: error #20: identifier "GPIO_PORTF_DIR_R" is undefined
+"../Downloads/lcd.c", line 140: error #20: identifier "GPIO_PORTF_DEN_R" is undefined
+"../Downloads/lcd.c", line 142: error #20: identifier "GPIO_PORTD_DIR_R" is undefined
+"../Downloads/lcd.c", line 143: error #20: identifier "GPIO_PORTD_DEN_R" is undefined
+"../Downloads/lcd.c", line 145: error #20: identifier "GPIO_PORTD_DATA_R" is undefined
+"../Downloads/lcd.c", line 148: warning #225-D: function "timer_waitMillis" declared implicitly
+"../Downloads/lcd.c", line 151: warning #225-D: function "lcd_sendNibble" declared implicitly
+"../Downloads/lcd.c", line 154: warning #225-D: function "timer_waitMicros" declared implicitly
+"../Downloads/lcd.c", line 176: error #20: identifier "GPIO_PORTD_DATA_R" is undefined
+"../Downloads/lcd.c", line 180: warning #225-D: function "lcd_sendNibble" declared implicitly
+"../Downloads/lcd.c", line 207: error #20: identifier "GPIO_PORTD_DATA_R" is undefined
+"../Downloads/lcd.c", line 211: warning #225-D: function "lcd_sendNibble" declared implicitly
+"../Downloads/lcd.c", line 223: warning #161-D: declaration is incompatible with previous "lcd_sendNibble" (declared at line 151)
+"../Downloads/lcd.c", line 227: error #20: identifier "GPIO_PORTD_DATA_R" is undefined
+"../Downloads/lcd.c", line 228: error #20: identifier "GPIO_PORTF_DATA_R" is undefined
+"../Downloads/lcd.c", line 231: warning #225-D: function "timer_waitMicros" declared implicitly
+"../Downloads/lcd.c", line 302: warning #225-D: function "vsnprintf" declared implicitly
+"../Downloads/lcd.c", line 305: warning #225-D: function "strcmp" declared implicitly
+"../Downloads/lcd.c", line 309: warning #225-D: function "strcpy" declared implicitly
+"../Downloads/lcd.c", line 355: error #20: identifier "GPIO_PORTD_DATA_R" is undefined
+"../Downloads/lcd.c", line 360: warning #225-D: function "timer_waitMicros" declared implicitly
+"../Downloads/lcd.c", line 370: warning #225-D: function "timer_waitMillis" declared implicitly
+"../Downloads/lcd.c", line 95: warning #179-D: function "lcd_reverseNibble" was declared but never referenced
+13 errors detected in the compilation of "../Downloads/lcd.c".
+gmake: *** [Downloads/lcd.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../lab1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lab1.d_raw"  "../lab1.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'lab1.obj' failed
+"../lab1.c", line 1: fatal error #1965: cannot open source file "lcd.h"
+1 catastrophic error detected in the compilation of "../lab1.c".
+Compilation terminated.
+gmake: *** [lab1.obj] Error 1
+Building file: "../Downloads/lcd.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="Downloads/lcd.d_raw" --obj_directory="Downloads"  "../Downloads/lcd.c"
+ 
+>> Compilation failure
+Downloads/subdir_rules.mk:9: recipe for target 'Downloads/lcd.obj' failed
+"..\Downloads\lcd.h", line 15: fatal error #1965: cannot open source file "tm4c123gh6pm.h"
+1 catastrophic error detected in the compilation of "../Downloads/lcd.c".
+Compilation terminated.
+gmake: *** [Downloads/lcd.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../lab1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lab1.d_raw"  "../lab1.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'lab1.obj' failed
+"../lab1.c", line 1: fatal error #1965: cannot open source file "lcd.h"
+1 catastrophic error detected in the compilation of "../lab1.c".
+Compilation terminated.
+gmake: *** [lab1.obj] Error 1
+Building file: "../Downloads/lcd.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="Downloads/lcd.d_raw" --obj_directory="Downloads"  "../Downloads/lcd.c"
+ 
+>> Compilation failure
+Downloads/subdir_rules.mk:9: recipe for target 'Downloads/lcd.obj' failed
+"..\Downloads\lcd.h", line 15: fatal error #1965: cannot open source file "TM4C123GH6PM.h"
+1 catastrophic error detected in the compilation of "../Downloads/lcd.c".
+Compilation terminated.
+gmake: *** [Downloads/lcd.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../lab1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lab1.d_raw"  "../lab1.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'lab1.obj' failed
+"../lab1.c", line 1: fatal error #1965: cannot open source file "lcd.h"
+1 catastrophic error detected in the compilation of "../lab1.c".
+Compilation terminated.
+gmake: *** [lab1.obj] Error 1
+Building file: "../Downloads/lcd.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="Downloads/lcd.d_raw" --obj_directory="Downloads"  "../Downloads/lcd.c"
+ 
+>> Compilation failure
+Downloads/subdir_rules.mk:9: recipe for target 'Downloads/lcd.obj' failed
+"..\Downloads\lcd.h", line 15: fatal error #1965: cannot open source file "tm4c123gh6pm.h"
+1 catastrophic error detected in the compilation of "../Downloads/lcd.c".
+Compilation terminated.
+gmake: *** [Downloads/lcd.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../lab1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lab1.d_raw"  "../lab1.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'lab1.obj' failed
+"../lab1.c", line 1: fatal error #1965: cannot open source file "lcd.h"
+1 catastrophic error detected in the compilation of "../lab1.c".
+Compilation terminated.
+gmake: *** [lab1.obj] Error 1
+Building file: "../Downloads/lcd.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="Downloads/lcd.d_raw" --obj_directory="Downloads"  "../Downloads/lcd.c"
+ 
+>> Compilation failure
+Downloads/subdir_rules.mk:9: recipe for target 'Downloads/lcd.obj' failed
+"..\Downloads\lcd.h", line 16: fatal error #1965: cannot open source file "hwm_memmap.h"
+1 catastrophic error detected in the compilation of "../Downloads/lcd.c".
+Compilation terminated.
+gmake: *** [Downloads/lcd.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../lab1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lab1.d_raw"  "../lab1.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'lab1.obj' failed
+"../lab1.c", line 1: fatal error #1965: cannot open source file "lcd.h"
+1 catastrophic error detected in the compilation of "../lab1.c".
+Compilation terminated.
+gmake: *** [lab1.obj] Error 1
+Building file: "../Downloads/lcd.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="Downloads/lcd.d_raw" --obj_directory="Downloads"  "../Downloads/lcd.c"
+ 
+>> Compilation failure
+Downloads/subdir_rules.mk:9: recipe for target 'Downloads/lcd.obj' failed
+"..\Downloads\lcd.h", line 16: fatal error #1965: cannot open source file "hwm_memmap.h"
+1 catastrophic error detected in the compilation of "../Downloads/lcd.c".
+Compilation terminated.
+gmake: *** [Downloads/lcd.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../lab1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lab1.d_raw"  "../lab1.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'lab1.obj' failed
+"../lab1.c", line 1: fatal error #1965: cannot open source file "lcd.h"
+1 catastrophic error detected in the compilation of "../lab1.c".
+Compilation terminated.
+gmake: *** [lab1.obj] Error 1
+Building file: "../Downloads/lcd.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="Downloads/lcd.d_raw" --obj_directory="Downloads"  "../Downloads/lcd.c"
+ 
+>> Compilation failure
+Downloads/subdir_rules.mk:9: recipe for target 'Downloads/lcd.obj' failed
+"..\Downloads\lcd.h", line 16: fatal error #1965: cannot open source file "hwm_memmap.h"
+1 catastrophic error detected in the compilation of "../Downloads/lcd.c".
+Compilation terminated.
+gmake: *** [Downloads/lcd.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../lab1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lab1.d_raw"  "../lab1.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'lab1.obj' failed
+"../lab1.c", line 1: fatal error #1965: cannot open source file "lcd.h"
+1 catastrophic error detected in the compilation of "../lab1.c".
+Compilation terminated.
+gmake: *** [lab1.obj] Error 1
+Building file: "../Downloads/lcd.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="Downloads/lcd.d_raw" --obj_directory="Downloads"  "../Downloads/lcd.c"
+"../Downloads/lcd.c", line 148: warning #225-D: function "timer_waitMillis" declared implicitly
+"../Downloads/lcd.c", line 151: warning #225-D: function "lcd_sendNibble" declared implicitly
+"../Downloads/lcd.c", line 154: warning #225-D: function "timer_waitMicros" declared implicitly
+"../Downloads/lcd.c", line 180: warning #225-D: function "lcd_sendNibble" declared implicitly
+"../Downloads/lcd.c", line 211: warning #225-D: function "lcd_sendNibble" declared implicitly
+"../Downloads/lcd.c", line 223: warning #161-D: declaration is incompatible with previous "lcd_sendNibble" (declared at line 151)
+"../Downloads/lcd.c", line 231: warning #225-D: function "timer_waitMicros" declared implicitly
+"../Downloads/lcd.c", line 302: warning #225-D: function "vsnprintf" declared implicitly
+"../Downloads/lcd.c", line 305: warning #225-D: function "strcmp" declared implicitly
+"../Downloads/lcd.c", line 309: warning #225-D: function "strcpy" declared implicitly
+"../Downloads/lcd.c", line 360: warning #225-D: function "timer_waitMicros" declared implicitly
+"../Downloads/lcd.c", line 370: warning #225-D: function "timer_waitMillis" declared implicitly
+"../Downloads/lcd.c", line 95: warning #179-D: function "lcd_reverseNibble" was declared but never referenced
+Finished building: "../Downloads/lcd.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../lab1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lab1.d_raw"  "../lab1.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'lab1.obj' failed
+"../lab1.c", line 1: fatal error #1965: cannot open source file "lcd.h"
+1 catastrophic error detected in the compilation of "../lab1.c".
+Compilation terminated.
+gmake: *** [lab1.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../lab1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lab1.d_raw"  "../lab1.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'lab1.obj' failed
+"../lab1.c", line 5: fatal error #1965: cannot open source file "stdio"
+1 catastrophic error detected in the compilation of "../lab1.c".
+Compilation terminated.
+gmake: *** [lab1.obj] Error 1
+Building file: "../lcd.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lcd.d_raw"  "../lcd.c"
+"../lcd.c", line 148: warning #225-D: function "timer_waitMillis" declared implicitly
+"../lcd.c", line 151: warning #225-D: function "lcd_sendNibble" declared implicitly
+"../lcd.c", line 154: warning #225-D: function "timer_waitMicros" declared implicitly
+"../lcd.c", line 180: warning #225-D: function "lcd_sendNibble" declared implicitly
+"../lcd.c", line 211: warning #225-D: function "lcd_sendNibble" declared implicitly
+"../lcd.c", line 223: warning #161-D: declaration is incompatible with previous "lcd_sendNibble" (declared at line 151)
+"../lcd.c", line 231: warning #225-D: function "timer_waitMicros" declared implicitly
+"../lcd.c", line 302: warning #225-D: function "vsnprintf" declared implicitly
+"../lcd.c", line 305: warning #225-D: function "strcmp" declared implicitly
+"../lcd.c", line 309: warning #225-D: function "strcpy" declared implicitly
+"../lcd.c", line 360: warning #225-D: function "timer_waitMicros" declared implicitly
+"../lcd.c", line 370: warning #225-D: function "timer_waitMillis" declared implicitly
+"../lcd.c", line 95: warning #179-D: function "lcd_reverseNibble" was declared but never referenced
+Finished building: "../lcd.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../lab1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lab1.d_raw"  "../lab1.c"
+Finished building: "../lab1.c"
+ 
+Building target: "lab_001.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab_001.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab_001_linkInfo.xml" --rom_model -o "lab_001.out" "./Timer.obj" "./lab1.obj" "./lcd.obj" "./resetSimulation.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+Finished building target: "lab_001.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'lab_001.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+gmake[1]: 'lab_001.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../lab1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lab1.d_raw"  "../lab1.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'lab1.obj' failed
+"../lab1.c", line 58: error #29: expected an expression
+"../lab1.c", line 58: error #20: identifier "offset" is undefined
+"../lab1.c", line 60: error #29: expected an expression
+"../lab1.c", line 60: error #20: identifier "i" is undefined
+"../lab1.c", line 67: warning #225-D: function "lcd_waitUntilNotBusy" declared implicitly
+4 errors detected in the compilation of "../lab1.c".
+gmake: *** [lab1.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../lab1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lab1.d_raw"  "../lab1.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'lab1.obj' failed
+"../lab1.c", line 60: error #29: expected an expression
+"../lab1.c", line 60: error #20: identifier "offset" is undefined
+"../lab1.c", line 62: error #29: expected an expression
+"../lab1.c", line 62: error #20: identifier "i" is undefined
+"../lab1.c", line 69: warning #225-D: function "lcd_waitUntilNotBusy" declared implicitly
+4 errors detected in the compilation of "../lab1.c".
+gmake: *** [lab1.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../lab1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lab1.d_raw"  "../lab1.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'lab1.obj' failed
+"../lab1.c", line 60: error #29: expected an expression
+"../lab1.c", line 60: error #20: identifier "offset" is undefined
+"../lab1.c", line 62: error #29: expected an expression
+"../lab1.c", line 62: error #20: identifier "i" is undefined
+"../lab1.c", line 69: warning #225-D: function "lcd_waitUntilNotBusy" declared implicitly
+4 errors detected in the compilation of "../lab1.c".
+gmake: *** [lab1.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../lab1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lab1.d_raw"  "../lab1.c"
+"../lab1.c", line 70: warning #225-D: function "lcd_waitUntilNotBusy" declared implicitly
+Finished building: "../lab1.c"
+ 
+Building target: "lab_001.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab_001.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab_001_linkInfo.xml" --rom_model -o "lab_001.out" "./Timer.obj" "./lab1.obj" "./lcd.obj" "./resetSimulation.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+ 
+ undefined            first referenced
+  symbol                  in file     
+ ---------            ----------------
+ lcd_waitUntilNotBusy ./lab1.obj      
+ 
+ 
+>> Compilation failure
+makefile:140: recipe for target 'lab_001.out' failed
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "lab_001.out" not built
+gmake[1]: *** [lab_001.out] Error 1
+gmake: *** [all] Error 2
+makefile:136: recipe for target 'all' failed
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../lcd.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lcd.d_raw"  "../lcd.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'lcd.obj' failed
+"..\lcd.h", line 30: error #131: expected a "{"
+"../lcd.c", line 95: warning #12-D: parsing restarts here after previous syntax error
+"../lcd.c", line 96: error #20: identifier "x" is undefined
+"../lcd.c", line 96: warning #121-D: return value type does not match the function type
+"../lcd.c", line 122: error #249: function "lcd_waitUntilNotBusy" has already been defined
+"../lcd.c", line 148: warning #225-D: function "timer_waitMillis" declared implicitly
+"../lcd.c", line 151: warning #225-D: function "lcd_sendNibble" declared implicitly
+"../lcd.c", line 154: warning #225-D: function "timer_waitMicros" declared implicitly
+"../lcd.c", line 159: warning #225-D: function "lcd_sendCommand" declared implicitly
+"../lcd.c", line 180: warning #225-D: function "lcd_sendNibble" declared implicitly
+"../lcd.c", line 203: warning #161-D: declaration is incompatible with previous "lcd_sendCommand" (declared at line 159)
+"../lcd.c", line 211: warning #225-D: function "lcd_sendNibble" declared implicitly
+"../lcd.c", line 223: warning #161-D: declaration is incompatible with previous "lcd_sendNibble" (declared at line 151)
+"../lcd.c", line 231: warning #225-D: function "timer_waitMicros" declared implicitly
+"../lcd.c", line 302: warning #225-D: function "vsnprintf" declared implicitly
+"../lcd.c", line 305: warning #225-D: function "strcmp" declared implicitly
+"../lcd.c", line 309: warning #225-D: function "strcpy" declared implicitly
+"../lcd.c", line 360: warning #225-D: function "timer_waitMicros" declared implicitly
+"../lcd.c", line 370: warning #225-D: function "timer_waitMillis" declared implicitly
+3 errors detected in the compilation of "../lcd.c".
+gmake: *** [lcd.obj] Error 1
+Building file: "../lab1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lab1.d_raw"  "../lab1.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'lab1.obj' failed
+"..\lcd.h", line 30: error #131: expected a "{"
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h", line 81: warning #12-D: parsing restarts here after previous syntax error
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h", line 82: warning #179-D: variable "fd" was declared but never referenced
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h", line 83: warning #179-D: variable "buf" was declared but never referenced
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h", line 84: warning #179-D: variable "pos" was declared but never referenced
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h", line 85: warning #179-D: variable "bufend" was declared but never referenced
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h", line 86: warning #179-D: variable "buff_stop" was declared but never referenced
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h", line 87: warning #179-D: variable "flags" was declared but never referenced
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h", line 234: error #20: identifier "size_t" is undefined
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h", line 253: error #20: identifier "size_t" is undefined
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h", line 272: error #20: identifier "size_t" is undefined
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h", line 303: error #20: identifier "size_t" is undefined
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h", line 304: error #20: identifier "size_t" is undefined
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h", line 304: error #20: identifier "size_t" is undefined
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h", line 306: error #20: identifier "size_t" is undefined
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h", line 307: error #20: identifier "size_t" is undefined
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h", line 307: error #20: identifier "size_t" is undefined
+"../lab1.c", line 55: warning #225-D: function "strlen" declared implicitly
+"../lab1.c", line 71: warning #225-D: function "lcd_printf" declared implicitly
+"../lab1.c", line 73: warning #225-D: function "timer_waitMillis" declared implicitly
+"../lab1.c", line 76: warning #225-D: function "lcd_gotoLine" declared implicitly
+"../lab1.c", line 81: warning #225-D: function "lcd_clear" declared implicitly
+"../lab1.c", line 82: warning #225-D: function "timer_waitMillis" declared implicitly
+"../lab1.c", line 88: warning #225-D: function "timer_init" declared implicitly
+10 errors detected in the compilation of "../lab1.c".
+gmake: *** [lab1.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../lcd.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lcd.d_raw"  "../lcd.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'lcd.obj' failed
+"..\lcd.h", line 30: error #131: expected a "{"
+"../lcd.c", line 95: warning #12-D: parsing restarts here after previous syntax error
+"../lcd.c", line 96: error #20: identifier "x" is undefined
+"../lcd.c", line 96: warning #121-D: return value type does not match the function type
+"../lcd.c", line 122: error #249: function "lcd_waitUntilNotBusy" has already been defined
+"../lcd.c", line 148: warning #225-D: function "timer_waitMillis" declared implicitly
+"../lcd.c", line 151: warning #225-D: function "lcd_sendNibble" declared implicitly
+"../lcd.c", line 154: warning #225-D: function "timer_waitMicros" declared implicitly
+"../lcd.c", line 159: warning #225-D: function "lcd_sendCommand" declared implicitly
+"../lcd.c", line 180: warning #225-D: function "lcd_sendNibble" declared implicitly
+"../lcd.c", line 203: warning #161-D: declaration is incompatible with previous "lcd_sendCommand" (declared at line 159)
+"../lcd.c", line 211: warning #225-D: function "lcd_sendNibble" declared implicitly
+"../lcd.c", line 223: warning #161-D: declaration is incompatible with previous "lcd_sendNibble" (declared at line 151)
+"../lcd.c", line 231: warning #225-D: function "timer_waitMicros" declared implicitly
+"../lcd.c", line 302: warning #225-D: function "vsnprintf" declared implicitly
+"../lcd.c", line 305: warning #225-D: function "strcmp" declared implicitly
+"../lcd.c", line 309: warning #225-D: function "strcpy" declared implicitly
+"../lcd.c", line 360: warning #225-D: function "timer_waitMicros" declared implicitly
+"../lcd.c", line 370: warning #225-D: function "timer_waitMillis" declared implicitly
+3 errors detected in the compilation of "../lcd.c".
+gmake: *** [lcd.obj] Error 1
+Building file: "../lab1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lab1.d_raw"  "../lab1.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'lab1.obj' failed
+"..\lcd.h", line 30: error #131: expected a "{"
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h", line 81: warning #12-D: parsing restarts here after previous syntax error
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h", line 82: warning #179-D: variable "fd" was declared but never referenced
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h", line 83: warning #179-D: variable "buf" was declared but never referenced
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h", line 84: warning #179-D: variable "pos" was declared but never referenced
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h", line 85: warning #179-D: variable "bufend" was declared but never referenced
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h", line 86: warning #179-D: variable "buff_stop" was declared but never referenced
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h", line 87: warning #179-D: variable "flags" was declared but never referenced
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h", line 234: error #20: identifier "size_t" is undefined
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h", line 253: error #20: identifier "size_t" is undefined
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h", line 272: error #20: identifier "size_t" is undefined
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h", line 303: error #20: identifier "size_t" is undefined
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h", line 304: error #20: identifier "size_t" is undefined
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h", line 304: error #20: identifier "size_t" is undefined
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h", line 306: error #20: identifier "size_t" is undefined
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h", line 307: error #20: identifier "size_t" is undefined
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h", line 307: error #20: identifier "size_t" is undefined
+"../lab1.c", line 55: warning #225-D: function "strlen" declared implicitly
+"../lab1.c", line 71: warning #225-D: function "lcd_printf" declared implicitly
+"../lab1.c", line 73: warning #225-D: function "timer_waitMillis" declared implicitly
+"../lab1.c", line 76: warning #225-D: function "lcd_gotoLine" declared implicitly
+"../lab1.c", line 81: warning #225-D: function "lcd_clear" declared implicitly
+"../lab1.c", line 82: warning #225-D: function "timer_waitMillis" declared implicitly
+"../lab1.c", line 88: warning #225-D: function "timer_init" declared implicitly
+10 errors detected in the compilation of "../lab1.c".
+gmake: *** [lab1.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../lab1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lab1.d_raw"  "../lab1.c"
+"..\lcd.h", line 25: warning #2120-D: static function "lcd_waitUntilNotBusy" treated as extern because it was referenced but not defined
+Finished building: "../lab1.c"
+ 
+Building file: "../lcd.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lcd.d_raw"  "../lcd.c"
+"../lcd.c", line 148: warning #225-D: function "timer_waitMillis" declared implicitly
+"../lcd.c", line 151: warning #225-D: function "lcd_sendNibble" declared implicitly
+"../lcd.c", line 154: warning #225-D: function "timer_waitMicros" declared implicitly
+"../lcd.c", line 180: warning #225-D: function "lcd_sendNibble" declared implicitly
+"../lcd.c", line 211: warning #225-D: function "lcd_sendNibble" declared implicitly
+"../lcd.c", line 223: warning #161-D: declaration is incompatible with previous "lcd_sendNibble" (declared at line 151)
+"../lcd.c", line 231: warning #225-D: function "timer_waitMicros" declared implicitly
+"../lcd.c", line 302: warning #225-D: function "vsnprintf" declared implicitly
+"../lcd.c", line 305: warning #225-D: function "strcmp" declared implicitly
+"../lcd.c", line 309: warning #225-D: function "strcpy" declared implicitly
+"../lcd.c", line 360: warning #225-D: function "timer_waitMicros" declared implicitly
+"../lcd.c", line 370: warning #225-D: function "timer_waitMillis" declared implicitly
+"../lcd.c", line 95: warning #179-D: function "lcd_reverseNibble" was declared but never referenced
+Finished building: "../lcd.c"
+ 
+Building target: "lab_001.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab_001.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab_001_linkInfo.xml" --rom_model -o "lab_001.out" "./Timer.obj" "./lab1.obj" "./lcd.obj" "./resetSimulation.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+ 
+ undefined            first referenced
+  symbol                  in file     
+ ---------            ----------------
+ lcd_waitUntilNotBusy ./lab1.obj      
+ 
+ 
+error #10234-D: unresolved symbols remain
+>> Compilation failure
+makefile:140: recipe for target 'lab_001.out' failed
+error #10010: errors encountered during linking; "lab_001.out" not built
+gmake[1]: *** [lab_001.out] Error 1
+gmake: *** [all] Error 2
+makefile:136: recipe for target 'all' failed
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab_001 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../lab1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lab1.d_raw"  "../lab1.c"
+"..\lcd.h", line 25: warning #2120-D: static function "lcd_waitUntilNotBusy" treated as extern because it was referenced but not defined
+Finished building: "../lab1.c"
+ 
+Building file: "../lcd.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1/lab_001" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lcd.d_raw"  "../lcd.c"
+"../lcd.c", line 148: warning #225-D: function "timer_waitMillis" declared implicitly
+"../lcd.c", line 151: warning #225-D: function "lcd_sendNibble" declared implicitly
+"../lcd.c", line 154: warning #225-D: function "timer_waitMicros" declared implicitly
+"../lcd.c", line 180: warning #225-D: function "lcd_sendNibble" declared implicitly
+"../lcd.c", line 211: warning #225-D: function "lcd_sendNibble" declared implicitly
+"../lcd.c", line 223: warning #161-D: declaration is incompatible with previous "lcd_sendNibble" (declared at line 151)
+"../lcd.c", line 231: warning #225-D: function "timer_waitMicros" declared implicitly
+"../lcd.c", line 302: warning #225-D: function "vsnprintf" declared implicitly
+"../lcd.c", line 305: warning #225-D: function "strcmp" declared implicitly
+"../lcd.c", line 309: warning #225-D: function "strcpy" declared implicitly
+"../lcd.c", line 360: warning #225-D: function "timer_waitMicros" declared implicitly
+"../lcd.c", line 370: warning #225-D: function "timer_waitMillis" declared implicitly
+"../lcd.c", line 95: warning #179-D: function "lcd_reverseNibble" was declared but never referenced
+Finished building: "../lcd.c"
+ 
+Building target: "lab_001.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab_001.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab_001_linkInfo.xml" --rom_model -o "lab_001.out" "./Timer.obj" "./lab1.obj" "./lcd.obj" "./resetSimulation.obj" "./tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+ 
+ undefined            first referenced
+  symbol                  in file     
+ ---------            ----------------
+ lcd_waitUntilNotBusy ./lab1.obj      
+ 
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "lab_001.out" not built
+ 
+>> Compilation failure
+makefile:140: recipe for target 'lab_001.out' failed
+gmake[1]: *** [lab_001.out] Error 1
+makefile:136: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****

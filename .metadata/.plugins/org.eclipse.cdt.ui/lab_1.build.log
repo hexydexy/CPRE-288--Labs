@@ -1,0 +1,130 @@
+
+**** Build of configuration Debug for project lab_1 ****
+
+"C:\\ti\\ccs1271\\ccs\\utils\\bin\\gmake" -k -j 20 all -O 
+ 
+Building file: "../lab1.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="U:/CPRE 288/lab_1" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="lab1.d_raw"  "../lab1.c"
+Finished building: "../lab1.c"
+ 
+Building target: "lab_1.out"
+Invoking: Arm Linker
+"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"lab_1.map" --heap_size=1024 --stack_size=2048 -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1271/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="lab_1_linkInfo.xml" --rom_model -o "lab_1.out" "./Timer.obj" "./lab1.obj" "./lcd.obj" "./resetSimulation.obj" "./tm4c123gh6pm_startup_ccs.obj" "../RemoteSystemsTempFiles/lab_1/Debug/Timer.obj" "../RemoteSystemsTempFiles/lab_1/Debug/helloworld.obj" "../RemoteSystemsTempFiles/lab_1/Debug/lcd.obj" "../RemoteSystemsTempFiles/lab_1/Debug/resetSimulation.obj" "../RemoteSystemsTempFiles/lab_1/Debug/tm4c123gh6pm_startup_ccs.obj" "./RemoteSystemsTempFiles/lab_1/Timer.obj" "./RemoteSystemsTempFiles/lab_1/helloworld.obj" "./RemoteSystemsTempFiles/lab_1/lcd.obj" "./RemoteSystemsTempFiles/lab_1/resetSimulation.obj" "./RemoteSystemsTempFiles/lab_1/tm4c123gh6pm_startup_ccs.obj" "../RemoteSystemsTempFiles/lab_1/lab_1/Debug/Timer.obj" "../RemoteSystemsTempFiles/lab_1/lab_1/Debug/helloworld.obj" "../RemoteSystemsTempFiles/lab_1/lab_1/Debug/lcd.obj" "../RemoteSystemsTempFiles/lab_1/lab_1/Debug/resetSimulation.obj" "../RemoteSystemsTempFiles/lab_1/lab_1/Debug/tm4c123gh6pm_startup_ccs.obj" "./RemoteSystemsTempFiles/lab_1/lab_1/Timer.obj" "./RemoteSystemsTempFiles/lab_1/lab_1/helloworld.obj" "./RemoteSystemsTempFiles/lab_1/lab_1/lcd.obj" "./RemoteSystemsTempFiles/lab_1/lab_1/resetSimulation.obj" "./RemoteSystemsTempFiles/lab_1/lab_1/tm4c123gh6pm_startup_ccs.obj" "../lab_001/Debug/Timer.obj" "../lab_001/Debug/lab1.obj" "../lab_001/Debug/lcd.obj" "../lab_001/Debug/resetSimulation.obj" "../lab_001/Debug/tm4c123gh6pm_startup_ccs.obj" "./lab_001/Timer.obj" "./lab_001/lab1.obj" "./lab_001/lcd.obj" "./lab_001/resetSimulation.obj" "./lab_001/tm4c123gh6pm_startup_ccs.obj" "../tm4c123gh6pm.cmd" "../RemoteSystemsTempFiles/lab_1/tm4c123gh6pm.cmd" "../RemoteSystemsTempFiles/lab_1/lab_1/tm4c123gh6pm.cmd" "../lab_001/tm4c123gh6pm.cmd"  -llibc.a -l"C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" 
+<Linking>
+"../RemoteSystemsTempFiles/lab_1/tm4c123gh6pm.cmd", line 13: error #10263: FLASH memory range has already been specified
+"../RemoteSystemsTempFiles/lab_1/tm4c123gh6pm.cmd", line 13: error #10264: FLASH memory range overlaps existing memory range FLASH
+"../RemoteSystemsTempFiles/lab_1/tm4c123gh6pm.cmd", line 14: error #10263: SRAM memory range has already been specified
+"../RemoteSystemsTempFiles/lab_1/tm4c123gh6pm.cmd", line 14: error #10264: SRAM memory range overlaps existing memory range SRAM
+"../RemoteSystemsTempFiles/lab_1/lab_1/tm4c123gh6pm.cmd", line 13: error #10263: FLASH memory range has already been specified
+"../RemoteSystemsTempFiles/lab_1/lab_1/tm4c123gh6pm.cmd", line 13: error #10264: FLASH memory range overlaps existing memory range FLASH
+"../RemoteSystemsTempFiles/lab_1/lab_1/tm4c123gh6pm.cmd", line 13: error #10263: FLASH memory range has already been specified
+"../RemoteSystemsTempFiles/lab_1/lab_1/tm4c123gh6pm.cmd", line 13: error #10264: FLASH memory range overlaps existing memory range FLASH
+"../RemoteSystemsTempFiles/lab_1/lab_1/tm4c123gh6pm.cmd", line 14: error #10263: SRAM memory range has already been specified
+"../RemoteSystemsTempFiles/lab_1/lab_1/tm4c123gh6pm.cmd", line 14: error #10264: SRAM memory range overlaps existing memory range SRAM
+"../RemoteSystemsTempFiles/lab_1/lab_1/tm4c123gh6pm.cmd", line 14: error #10263: SRAM memory range has already been specified
+"../RemoteSystemsTempFiles/lab_1/lab_1/tm4c123gh6pm.cmd", line 14: error #10264: SRAM memory range overlaps existing memory range SRAM
+"../lab_001/tm4c123gh6pm.cmd", line 13: error #10263: FLASH memory range has already been specified
+"../lab_001/tm4c123gh6pm.cmd", line 13: error #10264: FLASH memory range overlaps existing memory range FLASH
+"../lab_001/tm4c123gh6pm.cmd", line 13: error #10263: FLASH memory range has already been specified
+"../lab_001/tm4c123gh6pm.cmd", line 13: error #10264: FLASH memory range overlaps existing memory range FLASH
+"../lab_001/tm4c123gh6pm.cmd", line 13: error #10263: FLASH memory range has already been specified
+"../lab_001/tm4c123gh6pm.cmd", line 13: error #10264: FLASH memory range overlaps existing memory range FLASH
+"../lab_001/tm4c123gh6pm.cmd", line 14: error #10263: SRAM memory range has already been specified
+"../lab_001/tm4c123gh6pm.cmd", line 14: error #10264: SRAM memory range overlaps existing memory range SRAM
+"../lab_001/tm4c123gh6pm.cmd", line 14: error #10263: SRAM memory range has already been specified
+"../lab_001/tm4c123gh6pm.cmd", line 14: error #10264: SRAM memory range overlaps existing memory range SRAM
+"../lab_001/tm4c123gh6pm.cmd", line 14: error #10263: SRAM memory range has already been specified
+"../lab_001/tm4c123gh6pm.cmd", line 14: error #10264: SRAM memory range overlaps existing memory range SRAM
+"../RemoteSystemsTempFiles/lab_1/tm4c123gh6pm.cmd", line 45: warning #10190-D: absolute symbol "__STACK_TOP" being redefined
+"../RemoteSystemsTempFiles/lab_1/lab_1/tm4c123gh6pm.cmd", line 45: warning #10190-D: absolute symbol "__STACK_TOP" being redefined
+"../lab_001/tm4c123gh6pm.cmd", line 45: warning #10190-D: absolute symbol "__STACK_TOP" being redefined
+"../RemoteSystemsTempFiles/lab_1/tm4c123gh6pm.cmd", line 45: warning #10190-D: absolute symbol "__STACK_TOP" being redefined
+"../RemoteSystemsTempFiles/lab_1/lab_1/tm4c123gh6pm.cmd", line 45: warning #10190-D: absolute symbol "__STACK_TOP" being redefined
+"../lab_001/tm4c123gh6pm.cmd", line 45: warning #10190-D: absolute symbol "__STACK_TOP" being redefined
+error #10056: symbol "timer_pause" redefined: first defined in "./Timer.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/Debug/Timer.obj"
+error #10056: symbol "timer_resume" redefined: first defined in "./Timer.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/Debug/Timer.obj"
+error #10056: symbol "timer_getMillis" redefined: first defined in "./Timer.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/Debug/Timer.obj"
+error #10056: symbol "_running" redefined: first defined in "./Timer.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/Debug/Timer.obj"
+error #10056: symbol "timer_init" redefined: first defined in "./Timer.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/Debug/Timer.obj"
+error #10056: symbol "timer_stop" redefined: first defined in "./Timer.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/Debug/Timer.obj"
+error #10056: symbol "timer_getMicros" redefined: first defined in "./Timer.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/Debug/Timer.obj"
+error #10056: symbol "timer_waitMillis" redefined: first defined in "./Timer.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/Debug/Timer.obj"
+error #10056: symbol "timer_waitMicros" redefined: first defined in "./Timer.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/Debug/Timer.obj"
+error #10056: symbol "main" redefined: first defined in "./lab1.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/Debug/helloworld.obj"
+error #10056: symbol "lcd_sendCommand" redefined: first defined in "./lcd.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/Debug/lcd.obj"
+error #10056: symbol "lcd_sendNibble" redefined: first defined in "./lcd.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/Debug/lcd.obj"
+error #10056: symbol "lcd_printf" redefined: first defined in "./lcd.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/Debug/lcd.obj"
+error #10056: symbol "lcd_setCursorPos" redefined: first defined in "./lcd.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/Debug/lcd.obj"
+error #10056: symbol "lcd_init" redefined: first defined in "./lcd.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/Debug/lcd.obj"
+error #10056: symbol "lcd_puts" redefined: first defined in "./lcd.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/Debug/lcd.obj"
+error #10056: symbol "lcd_putc" redefined: first defined in "./lcd.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/Debug/lcd.obj"
+error #10056: symbol "lcd_reverseNibble" redefined: first defined in "./lcd.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/Debug/lcd.obj"
+error #10056: symbol "lcd_gotoLine" redefined: first defined in "./lcd.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/Debug/lcd.obj"
+error #10056: symbol "resetSimulationBoard" redefined: first defined in "./resetSimulation.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/Debug/resetSimulation.obj"
+error #10056: symbol "ResetISR" redefined: first defined in "./tm4c123gh6pm_startup_ccs.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/Debug/tm4c123gh6pm_startup_ccs.obj"
+error #10056: symbol "g_pfnVectors" redefined: first defined in "./tm4c123gh6pm_startup_ccs.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/Debug/tm4c123gh6pm_startup_ccs.obj"
+error #10056: symbol "timer_pause" redefined: first defined in "./Timer.obj"; redefined in "./RemoteSystemsTempFiles/lab_1/Timer.obj"
+error #10056: symbol "timer_resume" redefined: first defined in "./Timer.obj"; redefined in "./RemoteSystemsTempFiles/lab_1/Timer.obj"
+error #10056: symbol "timer_getMillis" redefined: first defined in "./Timer.obj"; redefined in "./RemoteSystemsTempFiles/lab_1/Timer.obj"
+error #10056: symbol "_running" redefined: first defined in "./Timer.obj"; redefined in "./RemoteSystemsTempFiles/lab_1/Timer.obj"
+error #10056: symbol "timer_init" redefined: first defined in "./Timer.obj"; redefined in "./RemoteSystemsTempFiles/lab_1/Timer.obj"
+error #10056: symbol "timer_stop" redefined: first defined in "./Timer.obj"; redefined in "./RemoteSystemsTempFiles/lab_1/Timer.obj"
+error #10056: symbol "timer_getMicros" redefined: first defined in "./Timer.obj"; redefined in "./RemoteSystemsTempFiles/lab_1/Timer.obj"
+error #10056: symbol "timer_waitMillis" redefined: first defined in "./Timer.obj"; redefined in "./RemoteSystemsTempFiles/lab_1/Timer.obj"
+error #10056: symbol "timer_waitMicros" redefined: first defined in "./Timer.obj"; redefined in "./RemoteSystemsTempFiles/lab_1/Timer.obj"
+error #10056: symbol "main" redefined: first defined in "./lab1.obj"; redefined in "./RemoteSystemsTempFiles/lab_1/helloworld.obj"
+error #10056: symbol "lcd_sendCommand" redefined: first defined in "./lcd.obj"; redefined in "./RemoteSystemsTempFiles/lab_1/lcd.obj"
+error #10056: symbol "lcd_sendNibble" redefined: first defined in "./lcd.obj"; redefined in "./RemoteSystemsTempFiles/lab_1/lcd.obj"
+error #10056: symbol "lcd_printf" redefined: first defined in "./lcd.obj"; redefined in "./RemoteSystemsTempFiles/lab_1/lcd.obj"
+error #10056: symbol "lcd_setCursorPos" redefined: first defined in "./lcd.obj"; redefined in "./RemoteSystemsTempFiles/lab_1/lcd.obj"
+error #10056: symbol "lcd_init" redefined: first defined in "./lcd.obj"; redefined in "./RemoteSystemsTempFiles/lab_1/lcd.obj"
+error #10056: symbol "lcd_puts" redefined: first defined in "./lcd.obj"; redefined in "./RemoteSystemsTempFiles/lab_1/lcd.obj"
+error #10056: symbol "lcd_putc" redefined: first defined in "./lcd.obj"; redefined in "./RemoteSystemsTempFiles/lab_1/lcd.obj"
+error #10056: symbol "lcd_reverseNibble" redefined: first defined in "./lcd.obj"; redefined in "./RemoteSystemsTempFiles/lab_1/lcd.obj"
+error #10056: symbol "lcd_gotoLine" redefined: first defined in "./lcd.obj"; redefined in "./RemoteSystemsTempFiles/lab_1/lcd.obj"
+error #10056: symbol "resetSimulationBoard" redefined: first defined in "./resetSimulation.obj"; redefined in "./RemoteSystemsTempFiles/lab_1/resetSimulation.obj"
+error #10056: symbol "ResetISR" redefined: first defined in "./tm4c123gh6pm_startup_ccs.obj"; redefined in "./RemoteSystemsTempFiles/lab_1/tm4c123gh6pm_startup_ccs.obj"
+error #10056: symbol "g_pfnVectors" redefined: first defined in "./tm4c123gh6pm_startup_ccs.obj"; redefined in "./RemoteSystemsTempFiles/lab_1/tm4c123gh6pm_startup_ccs.obj"
+error #10056: symbol "timer_pause" redefined: first defined in "./Timer.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/lab_1/Debug/Timer.obj"
+error #10056: symbol "timer_resume" redefined: first defined in "./Timer.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/lab_1/Debug/Timer.obj"
+error #10056: symbol "timer_getMillis" redefined: first defined in "./Timer.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/lab_1/Debug/Timer.obj"
+error #10056: symbol "_running" redefined: first defined in "./Timer.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/lab_1/Debug/Timer.obj"
+error #10056: symbol "timer_init" redefined: first defined in "./Timer.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/lab_1/Debug/Timer.obj"
+error #10056: symbol "timer_stop" redefined: first defined in "./Timer.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/lab_1/Debug/Timer.obj"
+error #10056: symbol "timer_getMicros" redefined: first defined in "./Timer.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/lab_1/Debug/Timer.obj"
+error #10056: symbol "timer_waitMillis" redefined: first defined in "./Timer.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/lab_1/Debug/Timer.obj"
+error #10056: symbol "timer_waitMicros" redefined: first defined in "./Timer.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/lab_1/Debug/Timer.obj"
+error #10056: symbol "main" redefined: first defined in "./lab1.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/lab_1/Debug/helloworld.obj"
+error #10056: symbol "lcd_sendCommand" redefined: first defined in "./lcd.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/lab_1/Debug/lcd.obj"
+error #10056: symbol "lcd_sendNibble" redefined: first defined in "./lcd.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/lab_1/Debug/lcd.obj"
+error #10056: symbol "lcd_printf" redefined: first defined in "./lcd.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/lab_1/Debug/lcd.obj"
+error #10056: symbol "lcd_setCursorPos" redefined: first defined in "./lcd.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/lab_1/Debug/lcd.obj"
+error #10056: symbol "lcd_init" redefined: first defined in "./lcd.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/lab_1/Debug/lcd.obj"
+error #10056: symbol "lcd_puts" redefined: first defined in "./lcd.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/lab_1/Debug/lcd.obj"
+error #10056: symbol "lcd_putc" redefined: first defined in "./lcd.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/lab_1/Debug/lcd.obj"
+error #10056: symbol "lcd_reverseNibble" redefined: first defined in "./lcd.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/lab_1/Debug/lcd.obj"
+error #10056: symbol "lcd_gotoLine" redefined: first defined in "./lcd.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/lab_1/Debug/lcd.obj"
+error #10056: symbol "resetSimulationBoard" redefined: first defined in "./resetSimulation.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/lab_1/Debug/resetSimulation.obj"
+error #10056: symbol "ResetISR" redefined: first defined in "./tm4c123gh6pm_startup_ccs.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/lab_1/Debug/tm4c123gh6pm_startup_ccs.obj"
+error #10056: symbol "g_pfnVectors" redefined: first defined in "./tm4c123gh6pm_startup_ccs.obj"; redefined in "../RemoteSystemsTempFiles/lab_1/lab_1/Debug/tm4c123gh6pm_startup_ccs.obj"
+error #10056: symbol "timer_pause" redefined: first defined in "./Timer.obj"; redefined in "./RemoteSystemsTempFiles/lab_1/lab_1/Timer.obj"
+error #10056: symbol "timer_resume" redefined: first defined in "./Timer.obj"; redefined in "./RemoteSystemsTempFiles/lab_1/lab_1/Timer.obj"
+error #10056: symbol "timer_getMillis" redefined: first defined in "./Timer.obj"; redefined in "./RemoteSystemsTempFiles/lab_1/lab_1/Timer.obj"
+error #10056: symbol "_running" redefined: first defined in "./Timer.obj"; redefined in "./RemoteSystemsTempFiles/lab_1/lab_1/Timer.obj"
+error #10056: symbol "timer_init" redefined: first defined in "./Timer.obj"; redefined in "./RemoteSystemsTempFiles/lab_1/lab_1/Timer.obj"
+error #10056: symbol "timer_stop" redefined: first defined in "./Timer.obj"; redefined in "./RemoteSystemsTempFiles/lab_1/lab_1/Timer.obj"
+error #10056: symbol "timer_getMicros" redefined: first defined in "./Timer.obj"; redefined in "./RemoteSystemsTempFiles/lab_1/lab_1/Timer.obj"
+error #10056: symbol "timer_waitMillis" redefined: first defined in "./Timer.obj"; redefined in "./RemoteSystemsTempFiles/lab_1/lab_1/Timer.obj"
+error #10056: symbol "timer_waitMicros" redefined: first defined in "./Timer.obj"; redefined in "./RemoteSystemsTempFiles/lab_1/lab_1/Timer.obj"
+error #10056: symbol "main" redefined: first defined in "./lab1.obj"; redefined in "./RemoteSystemsTempFiles/lab_1/lab_1/helloworld.obj"
+error #10056: symbol "lcd_sendCommand" redefined: first defined in "./lcd.obj"; redefined in "./RemoteSystemsTempFiles/lab_1/lab_1/lcd.obj"
+fatal error #99900: error limit reached; 100 errors detected
+ 
+>> Compilation failure
+makefile:185: recipe for target 'lab_1.out' failed
+gmake[1]: *** [lab_1.out] Error 1
+gmake: *** [all] Error 2
+makefile:181: recipe for target 'all' failed
+
+**** Build Finished ****

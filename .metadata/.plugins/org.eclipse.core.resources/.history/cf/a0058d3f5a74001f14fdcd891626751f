@@ -1,0 +1,53 @@
+#include "movement.h"
+
+/*
+ * @Author Winson Vetsavong Miles Nichols
+ * @Date 9/12/2024
+ */
+
+void move_forward(oi_t *sensor, int centimeter)
+{
+    double sum = 0;
+    double milimeters = centimeter * 10;
+
+    oi_t *sensor_data = oi_alloc();
+    oi_init(sensor_data);
+
+    oi_setWheels(100, 100);
+
+    while (sum < milimeters)
+    {
+        oi_update(sensor_data);
+        sum += sensor_data->distance;
+
+    }
+
+    oi_setWheels(0, 0); // stop
+}
+
+void turn_clockwise(oi_t *sensor, double desiredDegrees) {
+    double degrees = desiredDegrees;
+    double sum = 0;
+
+    oi_t *sensor_data = oi_alloc();
+    oi_init(sensor_data);
+
+    oi_setWheels(0,50);
+
+    while(angle < degrees){
+        oi_update(sensor_data);
+        sum += sensor_data->angle;
+        if (degrees == 360)
+            break;
+    }
+
+    oi_setWheels(0, 0); // stop
+
+
+}
+
+void turn_counterclockwise(oi_t *sensor, double desiredDegrees) {
+    oi_t *sensor_data = oi_alloc();
+    oi_init(sensor_data);
+    //TODO
+}

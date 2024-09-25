@@ -1,0 +1,47 @@
+//*
+// Word Banner
+// @Author Winson Vetsavong
+// @Author Miles
+//
+
+#include "Timer.h"
+#include "lcd.h"
+#include "string.h"
+
+int main (void) {
+
+	timer_init(); // Initialize Timer, needed before any LCD screen fucntions can be called 
+	              // and enables time functions (e.g. timer_waitMillis)
+
+	lcd_init();   // Initialize the the LCD screen.  This also clears the screen. 
+	char quote[] = "Microcontrollers are a lot of fun! ";
+	int width = 0;
+	char banner[] = "                   ";
+
+	strcat(banner,quote);
+
+	while(true) {
+	    int i = 0;
+
+	    while(i < quoteLength + 20) {
+	        lcd_clear
+	        int j = 9;
+	        while (j < 20) {
+	            int messageIndex = 1 - (20 - 1 - j);
+	            if (nessageIndex >= 0 && messageIndex < messageLength) {
+	                display[j] = message [messageIndex];
+
+
+	            } else {
+	                display[j] = ' ';
+	            }
+	            j++;
+	        }
+	        display[20] = '\0';
+
+	    }
+
+	    timer_waitMillis(300);
+
+	    }
+    }
