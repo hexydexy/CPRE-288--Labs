@@ -1,0 +1,19 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2024.10.09 19:57:43 =~=~=~=~=~=~=~=~=~=~=~=
+Raw IR: 1039 
+Raw IR: 1071 
+Raw IR: 1056 
+Raw IR: 1137 
+Raw IR: 1162 
+Raw IR: 1208 
+Raw IR: 1189 
+Raw IR: 1311 
+Raw IR: 1369 
+Raw IR: 1473 
+Raw IR: 1565 
+Raw IR: 1701 
+Raw IR: 1869 
+Raw IR: 2065 
+Raw IR: 2379 
+Raw IR: 2912 
+Raw IR: 3811 
+Raw IR: 3563 

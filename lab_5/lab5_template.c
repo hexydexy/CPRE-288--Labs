@@ -12,6 +12,7 @@
 #include "button.h"
 #include "timer.h"
 #include "lcd.h"
+#include <math.h>
 
 #include "cyBot_uart.h"  // Functions for communiticate between CyBot and Putty (via UART)
                          // PuTTy: Buad=115200, 8 data bits, No Flow Control, No Party,  COM1
@@ -53,6 +54,8 @@ int main(void) {
 	
 	// Initialze scan sensors
      cyBOT_init_Scan(0b0111);
+     cyBOT_Scan_t sensor_data;
+
 
 
 
@@ -75,7 +78,22 @@ int main(void) {
 //	}
 
      // PART 3
-     while (1) {
-
+     while (true) {
+         int i = 0;
+         int distance = 0;
+         char input = cyBot_getByte_blocking();
+         if (input == 'm') {
+             cyBOT_Scan(90, &sensor_data);
+//             distance = (-0.0346 * pow(sensor_data.IR_raw_val,3))+(4.5110 * pow(sensor_data.IR_raw_val,2))-(201.8037 * (sensor_data.IR_raw_val)) + 4229.0647;
+//             distance = 1293.8669 + (6114.2814/sensor_data.IR_raw_val);
+             distance = 6524.7095 * (pow(sensor_data.IR_raw_val,-0.4570));
+             sprintf(message, "Raw IR: %d Distance[cm]: %d\n", sensor_data.IR_raw_val, distance);
+         }
+         while (message[i] != '\n') {
+             cyBot_sendByte(message[i]);
+             i++;
+         }
+         cyBot_sendByte('\n');
+         input = '\0';
      }
 }
