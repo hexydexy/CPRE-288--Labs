@@ -13,6 +13,7 @@ ORDERED_OBJS += \
 "./Timer.obj" \
 "./lcd.obj" \
 "./main.obj" \
+"./open_interface.obj" \
 "./tm4c123gh6pm_startup_ccs.obj" \
 "./uart.obj" \
 "../libcybotScan.lib" \
@@ -147,8 +148,8 @@ lab_7.out: $(OBJS) $(CMD_SRCS) $(LIB_SRCS) $(GEN_CMDS)
 # Other Targets
 clean:
 	-$(RM) $(EXE_OUTPUTS__QUOTED)
-	-$(RM) "Timer.obj" "lcd.obj" "main.obj" "tm4c123gh6pm_startup_ccs.obj" "uart.obj" 
-	-$(RM) "Timer.d" "lcd.d" "main.d" "tm4c123gh6pm_startup_ccs.d" "uart.d" 
+	-$(RM) "Timer.obj" "lcd.obj" "main.obj" "open_interface.obj" "tm4c123gh6pm_startup_ccs.obj" "uart.obj" 
+	-$(RM) "Timer.d" "lcd.d" "main.d" "open_interface.d" "tm4c123gh6pm_startup_ccs.d" "uart.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 
