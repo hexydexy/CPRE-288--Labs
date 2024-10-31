@@ -28,6 +28,7 @@ main.obj: C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/interrupt.h
 main.obj: ../lcd.h
 main.obj: ../cyBot_Scan.h
 main.obj: ../uart.h
+main.obj: ../movement.h
 
 ../main.c:
 
@@ -84,4 +85,6 @@ C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/interrupt.h:
 ../cyBot_Scan.h:
 
 ../uart.h:
+
+../movement.h:
 

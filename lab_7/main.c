@@ -18,21 +18,22 @@
 #include <inc/tm4c123gh6pm.h>
 #include "driverlib/interrupt.h"
 #include "uart.h"
+#include "movement.h"
 
-#define _CALIBRATE 1
+#define _CALIBRATE 0
 #define _TESTDISTANCE 0
 #define _TESTAVERAGE 0
 #define _PART1 1
-#define _PART2 0
+#define _PART2 1
 #define _PART3 0
 #define _PART4 0
-#define COEFFICIENT 19936200
-#define EXPONENT -1.892
+#define COEFFICIENT 306999000
+#define EXPONENT -2.371
 
 
-int averageInt(int arrayElement1, int arrayElement2)
+int averageInt(int arrayElement1, int arrayElement2, int arrayElement3)
 {
-    return (arrayElement1+arrayElement2)/2;
+    return (int)(arrayElement1+arrayElement2+arrayElement3)/3;
 }
 
 //int* average(int* intArray1, int* intArray2, int size) {
@@ -52,27 +53,28 @@ struct Object{
   int distance;
   int startAngle;
   int endAngle;
+  int angularWidth;
 };
 
 int main(void)
 {
-//    oi_t *o_int = oi_alloc();
-//    oi_init(o_int);
+    oi_t *o_int = oi_alloc();
+    oi_init(o_int);
 	timer_init();
 	lcd_init();
 	uart_init();
 	cyBOT_init_Scan(0b0111);
 	cyBOT_Scan_t sensor_data;
 
-	right_calibration_value = 253750; //Calibration for CyBot 11
-	left_calibration_value = 1256500;
+	right_calibration_value = 348250; //Calibration for CyBot 2041-09
+	left_calibration_value = 1351000;
 
 
 #if _CALIBRATE
 	cyBOT_SERVO_cal();
 #endif
 
-#if _TEST
+#if _TESTDISTANCE
     char message[50];
     while (true)
     {
@@ -119,70 +121,108 @@ int main(void)
 #if _PART1
     int array1[90];
     int array2[90];
+    int array3[90];
     int avgArray [90];
-    int distance;
+    int IRdistance;
     int i;
     int arrayIdx = 0;
-    int objectListIndx = 0;
+    int objectListIdx = 0;
     int objectCount = 0;
-    char message[50];
-    struct Object objectList[4];
+    char message[30];
+    struct Object objectList[10];
+    bool objMaking = false;
 
     //180 Degree Scan
     for (i = 0; i < 180; i += 2)
     {
         cyBOT_Scan(i, &sensor_data);
-        distance = COEFFICIENT * (pow(sensor_data.IR_raw_val,EXPONENT));
-        array1[arrayIdx] = distance;
+        IRdistance = COEFFICIENT * (pow(sensor_data.IR_raw_val,EXPONENT));
+        array1[arrayIdx] = IRdistance;
 
         cyBOT_Scan(i, &sensor_data);
-        distance = COEFFICIENT * (pow(sensor_data.IR_raw_val,EXPONENT));
-        array2[arrayIdx] = distance;
+        IRdistance = COEFFICIENT * (pow(sensor_data.IR_raw_val,EXPONENT));
+        array2[arrayIdx] = IRdistance;
+
+        cyBOT_Scan(i, &sensor_data);
+        IRdistance = COEFFICIENT * (pow(sensor_data.IR_raw_val,EXPONENT));
+        array3[arrayIdx] = IRdistance;
 
         arrayIdx++;
     }
-//average the two arrays
-    for(i = 0; i < 90; i++)
-    {
-        avgArray[i] = averageInt(array1[i],array2[i]);
-    }
+//average the 3 arrays
+        for (i = 0; i < 90; i++)
+        {
+            avgArray[i] = averageInt(array1[i], array2[i],array3[i]);
+        }
+
 
     for (i = 0; i < 90; i++)
     {
         int angle = i * 2;
-        printf("Array[%d] Array1:%d Array2:%d\n", i, array1[i], array2[i]);
+//        printf("Array[%d] Array1:%d Array2:%d Array3:%d AvgArray:%d\n", i, array1[i],
+//               array2[i], array3[i], avgArray[i]);
 
-        if ((avgArray[i + 1] - avgArray[i]) > 5)
+        if ((abs((avgArray[i + 1] - avgArray[i])) < 6) && (avgArray[i] < 70) && objMaking == false)
         {
-            objectList[i].startAngle = angle;
+            objectList[objectCount].startAngle = angle;
+            objMaking = true;
+        }
+
+        if ((abs((avgArray[i] - avgArray[i - 1])) > 6) && (avgArray[i] < 70) && objMaking == true)
+        {
+            objectList[objectCount].endAngle = angle;
             objectCount++;
+            objMaking = false;
         }
+    }
 
-        if ((avgArray[i] - avgArray[i + 1]) > 5)
+    //Scan using Ping Sensor
+    //find linear width with start and end angles
+    int temp = 0;
+    for (temp = 0; temp < objectCount; temp++)
+    {
+        objectList[temp].angularWidth = (objectList[temp].endAngle
+                - objectList[temp].startAngle);
+    }
+
+    int smallestWidthIdx = 0;
+    for (objectListIdx = 0; objectListIdx < objectCount; objectListIdx++)
+    {
+        int midpointAngle = (objectList[objectListIdx].startAngle
+                + objectList[objectListIdx].endAngle) / 2;
+        cyBOT_Scan(midpointAngle, &sensor_data);
+        objectList[objectListIdx].distance = sensor_data.sound_dist;
+        sprintf(message, "Object @ Angle:%d Distance:%d\n",
+                objectList[objectListIdx].startAngle,
+                objectList[objectListIdx].distance); //TODO LOOK AT THIS
+        uart_sendStr(message);
+        if (objectListIdx + 1 < objectCount) // Check bounds
         {
-            objectList[i].endAngle = angle;
+            if (objectList[objectListIdx + 1].angularWidth > objectList[objectListIdx].angularWidth)
+            {
+                smallestWidthIdx = objectListIdx; // Set smallestWidth based on condition
+            }
         }
-
-        //Scan using Ping Sensor
-        for (objectListIndx = 0; objectListIndx < objectCount; objectListIndx++)
-        {
-            int midpointAngle = (objectList[objectListIndx].startAngle+objectList[objectListIndx].endAngle) / 2;
-            cyBOT_Scan(midpointAngle, &sensor_data);
-            objectList[objectListIndx].distance = sensor_data.sound_dist;
-        }
+     cyBOT_Scan(objectList[smallestWidthIdx].startAngle, &sensor_data);
+    }
 
 
-
-	    sprintf(message, "Object @ Angle: %d Distance:%d\n",angle, objectList[objectListIndx].distance);
-	    uart_sendStr(message);
-
-
-	}
+//	    oi_free(o_int);
 
 #endif
 
 #if _PART2
-	//TODO
+    if (objectList[smallestWidthIdx].startAngle < 90)
+    {
+        turn_clockwise(o_int, (90 - objectList[smallestWidthIdx].startAngle));
+        move_forward(o_int,(objectList[smallestWidthIdx].distance-7));
+    }
+    else if (objectList[smallestWidthIdx].startAngle > 90)
+    {
+        turn_counterclockwise(o_int, (90 - objectList[smallestWidthIdx].startAngle));
+        move_forward(o_int,(objectList[smallestWidthIdx].distance-7));
+    }
+
 #endif
 
 #if _PART3
