@@ -23,8 +23,9 @@
 #define _CALIBRATE 0
 #define _TESTDISTANCE 0
 #define _TESTAVERAGE 0
+#define _TESTTURN 0
 #define _PART1 1
-#define _PART2 1
+#define _PART2 01
 #define _PART3 0
 #define _PART4 0
 #define COEFFICIENT 306999000
@@ -34,6 +35,11 @@
 int averageInt(int arrayElement1, int arrayElement2, int arrayElement3)
 {
     return (int)(arrayElement1+arrayElement2+arrayElement3)/3;
+}
+
+int linearWidth(int theta, int distance)
+{
+    return 2*distance*tan((theta*(M_PI/180))/2);
 }
 
 //int* average(int* intArray1, int* intArray2, int size) {
@@ -66,7 +72,7 @@ int main(void)
 	cyBOT_init_Scan(0b0111);
 	cyBOT_Scan_t sensor_data;
 
-	right_calibration_value = 348250; //Calibration for CyBot 2041-09
+	right_calibration_value = 348250; //Calibration for CyBot 2041-09 USE THIS ONE
 	left_calibration_value = 1351000;
 
 
@@ -118,10 +124,13 @@ int main(void)
 
 #endif
 
+#if _TESTTURN
+//turn_clockwise(o_int, 82);
+    move_forward(o_int, 50);
+
+#endif
+
 #if _PART1
-    int array1[90];
-    int array2[90];
-    int array3[90];
     int avgArray [90];
     int IRdistance;
     int i;
@@ -129,31 +138,34 @@ int main(void)
     int objectListIdx = 0;
     int objectCount = 0;
     char message[30];
-    struct Object objectList[10];
+    struct Object objectList[13];
     bool objMaking = false;
 
     //180 Degree Scan
     for (i = 0; i < 180; i += 2)
     {
+        int temp = 0;
         cyBOT_Scan(i, &sensor_data);
-        IRdistance = COEFFICIENT * (pow(sensor_data.IR_raw_val,EXPONENT));
-        array1[arrayIdx] = IRdistance;
+        IRdistance = COEFFICIENT * (pow(sensor_data.IR_raw_val, EXPONENT));
+        temp += IRdistance;
 
         cyBOT_Scan(i, &sensor_data);
-        IRdistance = COEFFICIENT * (pow(sensor_data.IR_raw_val,EXPONENT));
-        array2[arrayIdx] = IRdistance;
+        IRdistance = COEFFICIENT * (pow(sensor_data.IR_raw_val, EXPONENT));
+        temp += IRdistance;
 
         cyBOT_Scan(i, &sensor_data);
-        IRdistance = COEFFICIENT * (pow(sensor_data.IR_raw_val,EXPONENT));
-        array3[arrayIdx] = IRdistance;
+        IRdistance = COEFFICIENT * (pow(sensor_data.IR_raw_val, EXPONENT));
+        temp += IRdistance;
 
+        avgArray[arrayIdx] = temp / 3;
         arrayIdx++;
     }
-//average the 3 arrays
-        for (i = 0; i < 90; i++)
-        {
-            avgArray[i] = averageInt(array1[i], array2[i],array3[i]);
-        }
+
+////average the 3 arrays
+//        for (i = 0; i < 90; i++)
+//        {
+//            avgArray[i] /= 3;
+//        }
 
 
     for (i = 0; i < 90; i++)
@@ -162,17 +174,19 @@ int main(void)
 //        printf("Array[%d] Array1:%d Array2:%d Array3:%d AvgArray:%d\n", i, array1[i],
 //               array2[i], array3[i], avgArray[i]);
 
-        if ((abs((avgArray[i + 1] - avgArray[i])) < 6) && (avgArray[i] < 70) && objMaking == false)
+        //If the absolute difference between the next element and current element is less than 6, mark start angle of object
+        if ((abs((avgArray[i + 1] - avgArray[i])) < 6) && (abs(avgArray[i - 1] - avgArray[i]) < 6) && (avgArray[i] < 70) && objMaking == false)
         {
             objectList[objectCount].startAngle = angle;
-            objMaking = true;
+            objMaking = true; //Flagging that an object has started
         }
 
-        if ((abs((avgArray[i] - avgArray[i - 1])) > 6) && (avgArray[i] < 70) && objMaking == true)
+        //If the absolute difference between the last and current element is greater than 6, mark end angle of object
+        if ((abs((avgArray[i] - avgArray[i - 1])) > 6) && (abs(avgArray[i] - avgArray[i + 1]) < 6) && (avgArray[i] < 70) && objMaking == true)
         {
             objectList[objectCount].endAngle = angle;
-            objectCount++;
-            objMaking = false;
+            objectCount++; //Increment the objectCount
+            objMaking = false; //Flagging that an object has ended
         }
     }
 
@@ -189,13 +203,13 @@ int main(void)
     for (objectListIdx = 0; objectListIdx < objectCount; objectListIdx++)
     {
         int midpointAngle = (objectList[objectListIdx].startAngle
-                + objectList[objectListIdx].endAngle) / 2;
+                + objectList[objectListIdx].endAngle) / 2; //calculate midpoint of object
         cyBOT_Scan(midpointAngle, &sensor_data);
-        objectList[objectListIdx].distance = sensor_data.sound_dist;
+        objectList[objectListIdx].distance = sensor_data.sound_dist; //use sonar sensor to find the distance
         sprintf(message, "Object @ Angle:%d Distance:%d\n",
                 objectList[objectListIdx].startAngle,
-                objectList[objectListIdx].distance); //TODO LOOK AT THIS
-        uart_sendStr(message);
+                objectList[objectListIdx].distance);
+        uart_sendStr(message); //debugging + send to PuTTY
         if (objectListIdx + 1 < objectCount) // Check bounds
         {
             if (objectList[objectListIdx + 1].angularWidth > objectList[objectListIdx].angularWidth)
@@ -212,15 +226,15 @@ int main(void)
 #endif
 
 #if _PART2
-    if (objectList[smallestWidthIdx].startAngle < 90)
+    if (objectList[smallestWidthIdx].startAngle < 90) //If smallest object is within the right bounded area of the roomba
     {
-        turn_clockwise(o_int, (90 - objectList[smallestWidthIdx].startAngle));
-        move_forward(o_int,(objectList[smallestWidthIdx].distance-7));
+        turn_clockwise(o_int, (90 - objectList[smallestWidthIdx].startAngle - 8)); //Turn clockwise the difference between 90
+        move_forward(o_int,(objectList[smallestWidthIdx].distance-9));
     }
-    else if (objectList[smallestWidthIdx].startAngle > 90)
+    else if (objectList[smallestWidthIdx].startAngle > 90) //If smallest object is within the left bounded area of the roomba
     {
-        turn_counterclockwise(o_int, (90 - objectList[smallestWidthIdx].startAngle));
-        move_forward(o_int,(objectList[smallestWidthIdx].distance-7));
+        turn_counterclockwise(o_int, (objectList[smallestWidthIdx].startAngle - 90 - 8));
+        move_forward(o_int,(objectList[smallestWidthIdx].distance-9));
     }
 
 #endif
