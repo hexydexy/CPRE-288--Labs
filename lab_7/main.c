@@ -25,7 +25,7 @@
 #define _TESTAVERAGE 0
 #define _TESTTURN 0
 #define _PART1 1
-#define _PART2 01
+#define _PART2 2
 #define _PART3 0
 #define _PART4 0
 #define COEFFICIENT 306999000
@@ -39,7 +39,7 @@ int averageInt(int arrayElement1, int arrayElement2, int arrayElement3)
 
 int linearWidth(int theta, int distance)
 {
-    return 2*distance*tan((theta*(M_PI/180))/2);
+    return (int)2*distance*tan((theta*(M_PI/180))/2);
 }
 
 //int* average(int* intArray1, int* intArray2, int size) {
@@ -60,6 +60,8 @@ struct Object{
   int startAngle;
   int endAngle;
   int angularWidth;
+  int linearWidth;
+  int middlePoint;
 };
 
 int main(void)
@@ -161,13 +163,6 @@ int main(void)
         arrayIdx++;
     }
 
-////average the 3 arrays
-//        for (i = 0; i < 90; i++)
-//        {
-//            avgArray[i] /= 3;
-//        }
-
-
     for (i = 0; i < 90; i++)
     {
         int angle = i * 2;
@@ -175,14 +170,14 @@ int main(void)
 //               array2[i], array3[i], avgArray[i]);
 
         //If the absolute difference between the next element and current element is less than 6, mark start angle of object
-        if ((abs((avgArray[i + 1] - avgArray[i])) < 6) && (abs(avgArray[i - 1] - avgArray[i]) < 6) && (avgArray[i] < 70) && objMaking == false)
+        if ((abs((avgArray[i + 1] - avgArray[i])) > 7) && (avgArray[i] < 70) && objMaking == false)
         {
             objectList[objectCount].startAngle = angle;
             objMaking = true; //Flagging that an object has started
         }
 
         //If the absolute difference between the last and current element is greater than 6, mark end angle of object
-        if ((abs((avgArray[i] - avgArray[i - 1])) > 6) && (abs(avgArray[i] - avgArray[i + 1]) < 6) && (avgArray[i] < 70) && objMaking == true)
+        if ((abs((avgArray[i] - avgArray[i - 1])) > 7) && (avgArray[i] < 70) && objMaking == true)
         {
             objectList[objectCount].endAngle = angle;
             objectCount++; //Increment the objectCount
@@ -202,22 +197,29 @@ int main(void)
     int smallestWidthIdx = 0;
     for (objectListIdx = 0; objectListIdx < objectCount; objectListIdx++)
     {
-        int midpointAngle = (objectList[objectListIdx].startAngle
+        objectList[objectListIdx].middlePoint = (int) (objectList[objectListIdx].startAngle
                 + objectList[objectListIdx].endAngle) / 2; //calculate midpoint of object
-        cyBOT_Scan(midpointAngle, &sensor_data);
+        cyBOT_Scan(objectList[objectListIdx].middlePoint, &sensor_data);
         objectList[objectListIdx].distance = sensor_data.sound_dist; //use sonar sensor to find the distance
-        sprintf(message, "Object @ Angle:%d Distance:%d\n",
-                objectList[objectListIdx].startAngle,
-                objectList[objectListIdx].distance);
+        timer_waitMillis(500);
+        objectList[i].linearWidth =  linearWidth(objectList[i].angularWidth,objectList[i].distance);
+
+        sprintf(message, "Object @ Angle:%d Distance:%d LWidth:%d\n",
+        objectList[objectListIdx].middlePoint,
+        objectList[objectListIdx].distance,
+        objectList[objectListIdx].linearWidth);
+
         uart_sendStr(message); //debugging + send to PuTTY
+        //Turn angular width into linear width
+
         if (objectListIdx + 1 < objectCount) // Check bounds
         {
-            if (objectList[objectListIdx + 1].angularWidth > objectList[objectListIdx].angularWidth)
+            if (objectList[objectListIdx].linearWidth < objectList[smallestWidthIdx].linearWidth)
             {
                 smallestWidthIdx = objectListIdx; // Set smallestWidth based on condition
             }
         }
-     cyBOT_Scan(objectList[smallestWidthIdx].startAngle, &sensor_data);
+     cyBOT_Scan(objectList[smallestWidthIdx].middlePoint, &sensor_data);
     }
 
 
@@ -229,12 +231,12 @@ int main(void)
     if (objectList[smallestWidthIdx].startAngle < 90) //If smallest object is within the right bounded area of the roomba
     {
         turn_clockwise(o_int, (90 - objectList[smallestWidthIdx].startAngle - 8)); //Turn clockwise the difference between 90
-        move_forward(o_int,(objectList[smallestWidthIdx].distance-9));
+        move_forward(o_int,(objectList[smallestWidthIdx].distance-12));
     }
     else if (objectList[smallestWidthIdx].startAngle > 90) //If smallest object is within the left bounded area of the roomba
     {
         turn_counterclockwise(o_int, (objectList[smallestWidthIdx].startAngle - 90 - 8));
-        move_forward(o_int,(objectList[smallestWidthIdx].distance-9));
+        move_forward(o_int,(objectList[smallestWidthIdx].distance-12));
     }
 
 #endif
