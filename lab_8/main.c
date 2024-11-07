@@ -22,7 +22,7 @@
 #define _TESTAVERAGE 0
 #define _TESTTURN 0
 #define _PART1 1
-#define _PART2 2
+#define _PART2 1
 #define _PART3 0
 #define _PART4 0
 #define COEFFICIENT 306999000
@@ -49,7 +49,7 @@ int averageInt(int arrayElement1, int arrayElement2, int arrayElement3)
 
 int linearWidth(int theta, int distance)
 {
-    return (int) 2 * distance * tan((theta * (M_PI / 180)) / 2);
+    return (int) (2 * distance * tan((theta * (M_PI / 180)) / 2));
 }
 
 struct Object
@@ -64,8 +64,7 @@ struct Object
 
 //bot 9 calibration!!!!!!!
 
-int main(void)
-{
+int main(void){
     oi_t *o_int = oi_alloc();
     oi_init(o_int);
     timer_init();
@@ -74,8 +73,11 @@ int main(void)
     cyBOT_init_Scan(0b0011);
     cyBOT_Scan_t sensor_data;
 
-    right_calibration_value = 348250; //Calibration for CyBot 2041-09 USE THIS ONE
-    left_calibration_value = 1351000;
+//    right_calibration_value = 348250; //Calibration for CyBot 2041-09 USE THIS ONE
+//    left_calibration_value = 1351000;
+
+    right_calibration_value = 280000; //Calibration for CyBot 2041-04
+    left_calibration_value = 1225000;
 
     // Initialize ADC and LCD
     adc_init();
@@ -94,6 +96,61 @@ int main(void)
     bool objMaking = false;
     char message[30] = "";
 
+#if _CALIBRATE
+    cyBOT_SERVO_cal();
+#endif
+
+#if _TESTDISTANCE
+    char message[50];
+    while (true)
+    {
+        int i = 0;
+        int distance;
+        char input = uart_receive();
+        if (input == 'm')
+        {
+            cyBOT_Scan(90, &sensor_data);
+            distance = COEFFICIENT * (pow(sensor_data.IR_raw_val,EXPONENT));
+            sprintf(message, "Raw IR: %d\nDistance[cm]: %d\n",
+                    sensor_data.IR_raw_val, distance);
+            lcd_printf(message);
+        }
+        while (message[i] != '\n')
+        {
+            uart_sendChar(message[i]);
+            i++;
+        }
+        uart_sendChar('\n');
+        input = '\0';
+    }
+#endif
+
+#if _TESTAVERAGE
+    int array1 [] = {4,4,4,4,4,4};
+    int array2 [] = {2,1,4,5,7,2};
+    int avgArray [sizeof(array1)];
+    int i;
+    int size = 2;
+
+    for(i = 0; i < 6; i++)
+    {
+        avgArray[i] = averageInt(array1[i],array2[i]);
+    }
+
+    for(i =0; i < 6; i++)
+    {
+        printf("%d\n", avgArray[i]);
+    }
+
+#endif
+
+#if _TESTTURN
+//turn_clockwise(o_int, 82);
+    move_forward(o_int, 50);
+
+#endif
+
+#if _PART1
     //180 Degree Scan
     for (i = 0; i < 180; i += 2)
     {
@@ -125,7 +182,7 @@ int main(void)
         //               array2[i], array3[i], avgArray[i]);
 
         //If the absolute difference between the next element and current element is less than 6, mark start angle of object
-        if ((abs((avgArray[i + 1] - avgArray[i])) > 7) && (avgArray[i] < 70)
+        if ((abs((avgArray[i + 1] - avgArray[i])) > 8) && (avgArray[i] < 70)
                 && objMaking == false)
         {
             objectList[objectCount].startAngle = angle;
@@ -133,7 +190,7 @@ int main(void)
         }
 
         //If the absolute difference between the last and current element is greater than 6, mark end angle of object
-        if ((abs((avgArray[i] - avgArray[i - 1])) > 7) && (avgArray[i] < 70)
+        else if ((abs((avgArray[i] - avgArray[i-1])) > 8) && (avgArray[i] < 70)
                 && objMaking == true)
         {
             objectList[objectCount].endAngle = angle;
@@ -158,10 +215,11 @@ int main(void)
                 (int) (objectList[objectListIdx].startAngle
                         + objectList[objectListIdx].endAngle) / 2; //calculate midpoint of object
         cyBOT_Scan(objectList[objectListIdx].middlePoint, &sensor_data);
+        timer_waitMillis(500);
         objectList[objectListIdx].distance = sensor_data.sound_dist; //use sonar sensor to find the distance
         timer_waitMillis(500);
-        objectList[objectListIdx].linearWidth = linearWidth(objectList[i].angularWidth,
-                                                objectList[i].distance);
+        objectList[objectListIdx].linearWidth = (2 * objectList[objectListIdx].distance) * tan((objectList[objectListIdx].angularWidth * (M_PI / 180)) / 2);
+        timer_waitMillis(500);
 
         sprintf(message, "Object @ Angle:%d Distance:%d LWidth:%d\n",
                 objectList[objectListIdx].middlePoint,
@@ -179,20 +237,23 @@ int main(void)
                 smallestWidthIdx = objectListIdx; // Set smallestWidth based on condition
             }
         }
-
         cyBOT_Scan(objectList[smallestWidthIdx].middlePoint, &sensor_data);
 
+    }
+#endif
+
+#if _PART2
         if (objectList[smallestWidthIdx].startAngle < 90) //If smallest object is within the right bounded area of the roomba
         {
             turn_clockwise(o_int,
                            (90 - objectList[smallestWidthIdx].startAngle - 8)); //Turn clockwise the difference between 90
-            move_forward(o_int, (objectList[smallestWidthIdx].distance - 14));
+            move_forward(o_int, (objectList[smallestWidthIdx].distance - 3));
         }
         else if (objectList[smallestWidthIdx].startAngle > 90) //If smallest object is within the left bounded area of the roomba
         {
             turn_counterclockwise(o_int,
                             (objectList[smallestWidthIdx].startAngle - 90 - 8));
-            move_forward(o_int, (objectList[smallestWidthIdx].distance - 14));
+            move_forward(o_int, (objectList[smallestWidthIdx].distance - 3));
         }
-    }
+#endif
 }
