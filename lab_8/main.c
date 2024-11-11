@@ -58,7 +58,7 @@ struct Object
     int startAngle;
     int endAngle;
     int angularWidth;
-    int linearWidth;
+    double linearWidth;
     int middlePoint;
 };
 
@@ -73,11 +73,11 @@ int main(void){
     cyBOT_init_Scan(0b0011);
     cyBOT_Scan_t sensor_data;
 
-//    right_calibration_value = 348250; //Calibration for CyBot 2041-09 USE THIS ONE
-//    left_calibration_value = 1351000;
+    right_calibration_value = 243250; //Calibration for CyBot 2041-09 USE THIS ONE
+    left_calibration_value = 1256500;
 
-    right_calibration_value = 280000; //Calibration for CyBot 2041-04
-    left_calibration_value = 1225000;
+//    right_calibration_value = 280000; //Calibration for CyBot 2041-04
+//    left_calibration_value = 1225000;
 
     // Initialize ADC and LCD
     adc_init();
@@ -175,23 +175,24 @@ int main(void){
         arrayIdx++;
     }
 
+
     for (i = 0; i < 90; i++)
     {
         int angle = i * 2;
         //        printf("Array[%d] Array1:%d Array2:%d Array3:%d AvgArray:%d\n", i, array1[i],
         //               array2[i], array3[i], avgArray[i]);
 
-        //If the absolute difference between the next element and current element is less than 6, mark start angle of object
-        if ((abs((avgArray[i + 1] - avgArray[i])) > 8) && (avgArray[i] < 70)
+        //If the absolute difference between the next element and current element is less than 8, mark start angle of object
+        if ((avgArray[i] < 65)
                 && objMaking == false)
         {
             objectList[objectCount].startAngle = angle;
             objMaking = true; //Flagging that an object has started
         }
 
-        //If the absolute difference between the last and current element is greater than 6, mark end angle of object
-        else if ((abs((avgArray[i] - avgArray[i-1])) > 8) && (avgArray[i] < 70)
-                && objMaking == true)
+        //If the absolute difference between the last and current element is greater than 8, mark end angle of object
+        else if ((avgArray[i] >= 65)
+                && (objMaking == true))
         {
             objectList[objectCount].endAngle = angle;
             objectCount++; //Increment the objectCount
@@ -206,6 +207,7 @@ int main(void){
     {
         objectList[temp].angularWidth = (objectList[temp].endAngle
                 - objectList[temp].startAngle);
+        timer_waitMillis(500);
     }
 
     int smallestWidthIdx = 0;
@@ -221,7 +223,7 @@ int main(void){
         objectList[objectListIdx].linearWidth = (2 * objectList[objectListIdx].distance) * tan((objectList[objectListIdx].angularWidth * (M_PI / 180)) / 2);
         timer_waitMillis(500);
 
-        sprintf(message, "Object @ Angle:%d Distance:%d LWidth:%d\n",
+        sprintf(message, "Object @ Angle:%d Distance:%d LWidth:%.2f\n",
                 objectList[objectListIdx].middlePoint,
                 objectList[objectListIdx].distance,
                 objectList[objectListIdx].linearWidth);
@@ -229,17 +231,16 @@ int main(void){
         uart_sendStr(message); //debugging + send to PuTTY
         //Turn angular width into linear width
 
-        if (objectListIdx + 1 < objectCount) // Check bounds
-        {
             if (objectList[objectListIdx].linearWidth
                     < objectList[smallestWidthIdx].linearWidth)
             {
                 smallestWidthIdx = objectListIdx; // Set smallestWidth based on condition
             }
-        }
-        cyBOT_Scan(objectList[smallestWidthIdx].middlePoint, &sensor_data);
 
     }
+
+    cyBOT_Scan(objectList[smallestWidthIdx].middlePoint, &sensor_data);
+
 #endif
 
 #if _PART2
@@ -247,13 +248,13 @@ int main(void){
         {
             turn_clockwise(o_int,
                            (90 - objectList[smallestWidthIdx].startAngle - 8)); //Turn clockwise the difference between 90
-            move_forward(o_int, (objectList[smallestWidthIdx].distance - 3));
+            move_forward(o_int, (objectList[smallestWidthIdx].distance - 13));
         }
         else if (objectList[smallestWidthIdx].startAngle > 90) //If smallest object is within the left bounded area of the roomba
         {
             turn_counterclockwise(o_int,
                             (objectList[smallestWidthIdx].startAngle - 90 - 8));
-            move_forward(o_int, (objectList[smallestWidthIdx].distance - 3));
+            move_forward(o_int, (objectList[smallestWidthIdx].distance - 13));
         }
 #endif
 }
